@@ -59,6 +59,26 @@ or individually:
 
 Stage 6/7 support `--apply` to append directly into `corrections.jsonl`.
 
+## Crowdsourced corrections (Google Sheet sync)
+
+`scripts/push_to_sheet.py` and `scripts/pull_from_sheet.py` bridge
+`corrections.jsonl` to a Google Sheet that non-technical reviewers can
+edit. One tab per year, yellow columns for typed fixes, hidden snapshot
+columns for collision detection. Reviewer corrections come back as
+`{"patch": {...}, "reviewer": "...", "reviewed_at": "...", "_sheet_hash": "..."}`
+entries appended to `corrections.jsonl` — the extra metadata fields are
+ignored by `pipeline/03_export_bib.py:apply_corrections`. `_sheet_hash`
+dedupes re-pulls of unchanged rows.
+
+`.github/workflows/sync_corrections.yml` pulls weekly and opens a PR;
+`.github/workflows/rebuild_bib.yml` regenerates the bib on merge. Both
+need `records.jsonl` tracked in git (it's gitignored by default — see
+`scripts/README.md`). Setup instructions and reviewer guide live in
+`scripts/README.md`.
+
+The sync is bounded to **content fixes on existing entries**. Adds,
+splits, and parser fixes stay in the existing local flows.
+
 ## Slide deck — 50th-anniversary talk
 
 A Marp-rendered slide deck lives under `slides/`:

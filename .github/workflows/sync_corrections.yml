@@ -1,0 +1,81 @@
+name: Sync corrections from Google Sheet
+
+on:
+  schedule:
+    # Mondays 13:00 UTC ≈ 09:00 Halifax (AST) / 10:00 (ADT)
+    - cron: "0 13 * * MON"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Run pull but don't open a PR"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check records.jsonl is available
+        run: |
+          if [ ! -f records.jsonl ]; then
+            echo "::error::records.jsonl is missing. CI sync needs it for"
+            echo "::error::collision detection. Commit it to the repo or run"
+            echo "::error::scripts/pull_from_sheet.py locally instead."
+            exit 1
+          fi
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install "gspread>=6.0" "google-auth>=2.20"
+
+      - name: Pull corrections from sheet
+        env:
+          GOOGLE_SA_KEY: ${{ secrets.GOOGLE_SA_KEY }}
+          CORRECTIONS_SHEET_ID: ${{ secrets.CORRECTIONS_SHEET_ID }}
+        run: python3 scripts/pull_from_sheet.py
+
+      - name: Show report
+        if: always()
+        run: |
+          if [ -f pull_report.md ]; then
+            cat pull_report.md >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Detect changes
+        id: changes
+        run: |
+          if git diff --quiet -- corrections.jsonl; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Open pull request
+        if: steps.changes.outputs.changed == 'true' && github.event.inputs.dry_run != 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: corrections/sheet-sync
+          delete-branch: true
+          commit-message: "Sync reviewer corrections from sheet"
+          title: "Sync corrections from Google Sheet"
+          body: |
+            Automated pull of reviewer fixes from the corrections spreadsheet.
+
+            **Next step:** merge this PR. A follow-up workflow
+            (`rebuild_bib.yml`) will regenerate `inhouse_conference.bib`
+            from the new corrections.
+
+            ---
+            See attached `pull_report.md` for the per-row summary.
+          add-paths: |
+            corrections.jsonl
+            pull_report.md

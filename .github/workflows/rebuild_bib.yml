@@ -1,0 +1,51 @@
+name: Rebuild bibliography
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "corrections.jsonl"
+      - "records.jsonl"
+      - "pipeline/03_export_bib.py"
+      - "pipeline/04_diagnose.py"
+      - "pipeline/booktitles.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check records.jsonl is available
+        run: |
+          if [ ! -f records.jsonl ]; then
+            echo "::warning::records.jsonl is gitignored — skipping rebuild."
+            echo "::warning::To enable auto-rebuild in CI, commit records.jsonl"
+            echo "::warning::(it's the parser output; treat it like a lockfile)."
+            exit 0
+          fi
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Regenerate bib + diagnostics
+        run: |
+          python3 pipeline/03_export_bib.py
+          python3 pipeline/04_diagnose.py || true   # diagnostics is best-effort
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- inhouse_conference.bib qa_report.md diagnostics.md; then
+            echo "No bib changes."
+            exit 0
+          fi
+          git add inhouse_conference.bib qa_report.md diagnostics.md
+          git commit -m "Rebuild bib from updated corrections"
+          git push
