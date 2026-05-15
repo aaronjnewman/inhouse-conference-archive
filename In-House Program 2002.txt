@@ -1,0 +1,933 @@
+Dalhousie University
+
+Department of Psychology
+
+28th Annual
+In-House Convention
+9-10 May 2002
+
+Welcome to the 2002 Psychology and
+Neuroscience In-House Convention
+
+Welcome to the 28th Annual Dalhousie University Department of Psychology In-House
+Convention.
+Thanks should be extended to the In-House Convention Committee for the planning and
+organization. The committee consists of the following individuals: John Connolly, Denise
+Bernier, Jen Klages, Randy Newman, Robin Patterson, and Kris Peace. Special thanks to Denise
+Robichaud.
+
+Friendly Reminders
+
+*Please bring your own mug for coffee or tea!
+*All presentations are listed in the name of the presenter from the abstracts submitted.
+*There will be pizza and beer at the end of Friday in the 2nd Floor Lounge.
+
+NEW SCHEDULE with changes
+Thursday, May 9, 2002 (LSC 4258)
+9:00
+
+Introduction to the In-House Convention -Richard Brown
+
+9:30-10:30
+
+SESSION1.
+Tl) Susan Boehnke
+T2) Frank Elgar
+T3) Catherine Forestell
+T4) Donald Mitchell
+
+10:30-10:45 COFFEE
+BREAK
+10:45-12:00
+
+SESSION2.
+T5) Pam Loba
+T6) Kelly Shoemaker
+T7) Richard Brown
+T8)
+T9) Jason Ivanoff
+
+12:00-
+
+2:00 LUNCHBREAKANDPOSTERS
+Pl) Jennifer Klages
+P2) Jennifer Theakston
+P3) Naomi Doucette
+P4) Martin Williamson
+P5) Cathy Stewart
+Poster by Laura Reynolds
+
+2:00-
+
+3:30 SESSION3.
+TIO) William Brown
+Tl 1) Dennis Phillips
+T12) Kristine Peace
+T13) Tara Perrot-Sinai
+T14) Sarah Boudreau
+T15) Kyle Owens
+
+Friday, May 10, 2002 (LSC 4258)
+
+10:30-10:45
+10:45-12:00
+
+COFFEE BREAK
+
+SESSION 4.
+
+Tl 6)
+Tl 7)
+T18)
+Tl 9)
+T20)
+12:00-2:00
+
+John Christie
+Marleen de Groot
+Amanda Wintink
+Cheryl Birch
+Sherry Stewart
+
+LUNCH BREAK AND POSTERS
+
+P6) Mohammad R. Inanbu
+P7) Sandra Sparkes
+P8) Jill E. Hatchette
+P9) Boris Kablar
+P 10) Christianne Hawken
+Pl 1) Tera Mosher
+2:00-
+
+3: 15 SESSION 5.
+T21)
+T22) Alicia Davis
+T23) Andrea Gregus
+T24) Denise Bernier
+T25) Anna Lee
+
+3:15- 3:30 COFFEE BREAK
+3:30-
+
+4:30-
+
+4:30 SESSION 6.
+T26) Jeremy Murphy
+T27) Randy Newman
+T28) Darcy Santor
+T29) Denise Bernier
+PIZZA AND BEER IN THE 2ND FLOOR PSYCHOLOGY LOUNGE
+
+A Historical Instroduction to the In-House Conference
+Richard Brown
+Almost everyone who has been in the Psychology Department over the last 28 years has
+given a presenation at the in-house conference. This introductory presentation will use
+photographs from the last 28+ years to stimulate memories of previous conferences.
+Photos of present and former faculty, students and PDF's in their most embarassing
+moments will be presented. A prize to the person who can identify the most people.
+
+Tl.
+
+Segregating the scene: the effectiveness of sound localization cues on the formation
+of auditory objects in time
+Susan Boehnke and Dennis Phillips
+The goal of the auditory system is to reconstruct sources in the acoustic scene and follow
+them through time, i.e. the formation of separate auditory 'streams' or objects (after
+Bregman, 1990). Differences in frequency, pitch, ear, or timbre can promote segregation
+of two interleaved sounds, but little is known of the effectiveness of the auditory cues for
+spatial location. In experiment l, subjects rated their perceptual experience of a repeating
+A_ B_A_ sequence of spectrally-identical noise bursts, where A differed from B in
+either ear of presentation, interaural level difference or interaural time difference (ITD).
+In experiment 2, detection thresholds were obtained for a temporal asymmetry in each
+type of ABA sequence, a task sensitive to stream formation. In both tasks, ITD was the
+least effective spatial cue for segregation, despite the fact that it is the dominant cue used
+for sound localization. The reason for this apparent mismatch will be discussed.
+
+T2.
+
+Dead Thesis Revival: Reforming Graduate Studies in Canadian Universities
+Frank J. Elgar
+In PhD programs in Canada, completion rates hover around 50%, less than 10% of
+students who do finish do so within scheduled residencies, and mean times-to-completion
+has nearly doubled during the last three decades from 6 to 11 years. Such inefficiency
+creates significant costs to universities and to students. Reform is needed to address low
+completion rates and lengthy times-to-completion. This presentation includes data from
+US and Canadian PhD programs and a discussion about the personal, social, financial and
+institutional factors that influence completion rates. A study is under way to examine the
+relation between institutional regulations and resources and completion rates in PhD
+programmes. Administrators of graduate studies from Canada, the United States and the
+United Kingdom will participate in a mail-in survey. Implications of the results and
+directions for further research will be discussed.
+
+T3.
+
+Palatability Shifts in Taste and Flavor Preference Conditioning
+Catherine A. Forestell and Vincent M. LoLordo
+Although rats acquire strong conditioned preferences for tastes and flavors paired with
+glucose, it is not clear whether this occurs because of a shift in palatability to the CS or
+whether the CS evokes an expectancy of postingestive reinforcement in test. The present
+studies sought to determine whether preference conditioning enhanced CS palatability
+using a taste reactivity procedure. Our results indicate that ingestive responses to taste
+and flavor stimuli are enhanced as a result of differential preference conditioning.
+
+T4.
+
+Correlated Binocular Activity Guides Recovery From Monocular Deprivation
+Donald Mitchell, Peter Kind, Bashir Ahmned, Colin Blakemore, Tobias
+Bonhoffer and Frank Sengpiel
+The mild effects of binocular as compared to monocular visual deprivation led to the
+widely held view that the plasticity observed in the mammalian visual cortex during
+development reflects the operation of competitive interactions for synaptic space
+between inputs from the two eyes. However, during a subsequent period of binocular
+vision there is substantial behavioural and physiological recovery, leading to the
+suggestion that absolute activity levels, or some other non-competitive mechanism,
+determine recovery from MD. Here we demonstrate that correlated binocular input is
+essential for such recovery. Both behavioural and physiological (assessed by optical
+imaging) recovery is far less complete if the two eyes are surgically misaligned after a
+period of MD. This is a powerful demonstration of the importance of cooperative,
+associative mechanisms in the developing visual cortex.
+
+TS.
+
+Planned Investigations of the Opiate-Mediated Reward Mechanisms Involved in
+Pathological Gambling-Alcohol Use Disorder Co-Morbidity
+Pamela Loba & Sherry Stewart
+Alcohol abuse and pathological gambling are commonly co-morbid, yet little is known
+about mechanisms underlying this co-occurrence. In a preliminary study (Stewart, Loba,
+Blackburn, Ellery, & Klein, in press), we examined heart rate (HR) responses to video
+lottery terminal (VL T) play and alcohol intake among a sample of regular VL T players.
+The results of this pilot study replicated previous findings that gambling and alcohol
+intake alone each result in increased HR. The results also provided novel information
+that the combination of VLT play and alcohol further intensifies HR increase relative to
+either activity alone. We have hypothesized that activity in the endogenous opiate system
+may underlie both pathological gambling and alcohol use disorders and may help explain
+their co-morbidity. We describe our plans for a set of three studies that will evaluate the
+possible role of endogenous opiates. The first is a replication and extension of our pilot
+study that controls for possible confounds (e.g., controls for movement artifact, use of
+placebo control). The second study will evaluate levels of beta endorphin release (via
+blood analyses) in response to VLT play, alcohol intake, and their combination in
+pathological and non-pathological gamblers, and will determine the degree to which betaendorphin correlates with HR acceleration to each activity. Finally, a third study will
+evaluate whether naltrexone (an opiate antagonist) blocks HR increase and positive mood
+changes to VL T play, alcohol intake, and their combination in a sample of pathological
+gamblers. Theoretical and clinical implications of this planned research will be discussed.
+
+T6.
+
+The impact of female reproduction on immunocompetence in the cricket
+Kelly Shoemaker and Shelley Adamo
+Animals may be selected to increase energy invested in reproduction at the expense of
+other physiological systems such as immunity. We examined whether a trade-off was
+evident between reproduction and immunity in the cricket, Gryllus texensis, by
+comparing the immunocompetence of mated females with the number of eggs they
+produced. Females will adjust egg output when presented with different egg-laying
+substrates. Immunocompetence was measured by: 1) phenoloxidase (PO) activity in the
+hemolymph; and 2) a functional assay analysing survival rates following infection with
+the bacterium Serratia marcescens. Contrary to prediction, we found no evidence for a
+difference in PO activity in the hemolymph of females laying significantly different
+numbers of eggs. Additionally, preliminary data suggest that females laying high
+numbers of eggs are, in fact, less likely to succumb to infection. These initial results
+suggest that while reproduction may be costly, these costs are not at the expense of
+immunity. Future studies will investigate a larger contrast in reproductive investment
+with virgin and mated females.
+
+T7.
+
+Einstein meets Lenin in Brodmann's area 39
+Richard Brown
+This talk is based on my research after reading two books: Michael Paterniti (2000)
+Driving Mr. Albert: A trip across America with Einstein's Brain, and Tilman Spengler
+(1991) Lenin's Brain.
+When Albert Einstein died on 18 April 1955, he was considered the greatest genius of his
+time. His brain was removed for analysis by Dr. Thomas Harvey, who kept it in a jar in a
+wooden box in his lab until the first research paper was published in 1985 (Diamond et
+al., 1985. Exp. Neurol. 88, 198-204). Since that time there have been at least 8 papers,
+two books, and numerous newspaper and magazine articles written about Einstein's
+brain.
+When Lenin died in January 1924, he was considered the greatest of geniuses. His brain
+was removed and analyzed by Oskar Vogt, who was selected by a special advisory board
+of the Soviet government. Vogt was a student of Haeckel and had worked for a year in
+Paris with the Joseph and Marie Dejerine (one of the most famous medical couples since
+the Curies), and from 1901-1910, Vogt and his wife Cecile (another famous medical
+couple), supervised the neuroanatomical research of Korbinian Brodmann, whose famous
+monograph "Localization in the Cerebral Cortex" was published in 1909 [English
+translation 1994].These neuroanatomists are only some of those who have examined
+"famous brains" as medical curiosities. What has been learned about the neural basis of
+intelligence from this "cult of genius"? This talk will examine some of the history of
+neuroscience related to the neuroanatomical analysis of famous brains.
+
+TS.
+
+Extrinsic cues provided by the extraocular striated muscle participate in the
+determination of retinal cell fates
+Boris Kablar
+Dalhousie University, Department of Anatomy and Neurobiology, Halifax, Canada
+Neural retinas of genetically modified mouse embryos entirely lacking extraocular
+striated muscles are used to study in vivo the epigenetic role of extraocular muscle in the
+genesis of retinal cell diversity. While retinal lamination and the total number of cells per
+retinal layer appeared unaffected in amyogenic fetuses, electron microscopy and
+histochemistry revealed the absence of cholinergic amacrine cell type. By contrast, the
+amounts of other amacrine cell subpopulations (calretinin-, tyrosine hydroxylase- and
+parvalbumin-expressing) were increased, whereas the amounts of Isletl/2-expressing
+retinal ganglion cells were decreased. Surprisingly, it was not possible to detect any
+change in proliferation or cell death. Consistently, the number of progenitors for retinal
+ganglion cells (nestin- expressing precursors) were increased, whereas the amounts of
+precursors for amacrine cells ( syntaxin- and VCI . I -expressing precursors) were
+decreased in the mutant retinas. The difference in requirements for extraocular muscle
+support in regulation of precise ratios of retinal neuronal cell types suggests an essential
+role of extrinsic cues in the determination of retinal cell fates. Supported by NSERC
+Canada.
+
+T9.
+
+Using speed-accuracy trade-off functions to explore the effect of inhibition of return
+on information processing
+Jason Ivanoff & Raymond Klein
+In two tasks - a go/no-go task and a choice-RT task - we generated speed-accuracy
+tradeofffunctions (SATFs) to examine the timecourse of the influence of inhibition of
+return (IOR) upon target processing.
+The SATFs were created by plotting accuracy as a function of response time. With the
+go/no-go task, IOR was characterized by slower responses, an increase in criterion (C),
+and a slight increase in sensitivity (d') at a relatively early portion of target processing.
+In contrast, with the choice-RT task, IOR was characterized by slower responses at an
+early portion of target processing and reduced accuracy at a late portion of target
+processing. This pattern of results suggests that IOR increases the criterion to make a
+response and it reduces the sensitivity of target processing during the relatively late
+portion of target processing, but only with choice-RT tasks.
+
+TlO.
+
+Fearful Asymmetry: Genomic Imprinting and Family Conflict
+William Michael Brown
+Conflicts of interest may occur between mother's and father's genes within offspring due
+to genomic imprinting (Haig, 2002). Genomic imprinting is the differential expression of
+a gene depending upon the parent-of-origin in which the gene was inherited.
+Specifically it appears that father's genes are predominantly expressed in the
+hypothalamus (involved in homeostasis)/limbic system while mother's genes are
+predominantly expressed in the neocortex (involved in flexible decision making). Haig
+(2000) and Trivers (2000) have both suggested that genomic imprinting could mediate
+conflicts over information transmission and reception within the brain. Keverne (2001)
+has further hypothesized that maternal genes may have been selected for the
+emancipation from endocrinological determinism mediated by paternal genes. It
+is a tantalizingly (albeit speculative) idea that the occurrence of genomic imprinting
+approximately 135 million years ago (MYA) in mammals may have indirectly facilitated
+coevolutionary conflicts between genes and social learning. This paper will outline some
+reasons to suspect that there are intragenomic conflicts over fear responses (e.g. fight
+or flight). Neuroscientists have located specific neurotransmitters in the brain that are
+involved in the suppression of agonistic responses. These transmitters and neural areas
+appear (in part) to be maternally derived.
+
+Tll.
+
+Our Biggest Headache: The Body's Smallest Muscle
+Dennis Phillips, Andrew Stuart and Michael Carpenter
+The stapedius muscle of the middle ear holds the dubious distinction of being the smallest
+muscle in the human body. It contracts reflexively in response to loud sounds, and the
+result of the contraction is a directly measurable reduction in transmission of lowfrequency vibrations to the cochlea. Now, speech sounds are inherently broadband, and
+at high intensities, the high-frequency content of the sounds is prone to masking by the
+sound's low-frequency content. This is problematic because the high-frequency content
+of speech carries much information on phoneme identity, so an inability to perceive the
+high-frequency information is highly deleterious to speech perception. The stapedius
+reflex thus has the beneficial consequence that at high stimulus intensities, highfrequency information is less masked than it would otherwise be by concurrent lowfrequency content in the sound. The main behavioral evidence on this view comes from
+patients with Bell's palsy. Bell's palsy is thought to be an isolated pathology of the facial
+nerve (the nerve that innervates the stapedius). In those patients, word recognition at the
+affected ear(s) is often profoundly poorer at high stimulus intensities than it is at low
+intensities. The explanation offered for this is that the high-frequency content of the
+speech sounds is not afforded its usual protection from low-frequency masking when the
+stimulus amplitudes are high. The present talk will describe two new experiments on the
+stapedius reflex. These experiments provide independent, converging lines of evidence
+on the role of the stapedius reflex in human hearing.
+
+T12.
+
+The Impact of the Interview: A Comparison of Traumatic and Positive Memory
+Characteristics
+Kristine A. Peace & Steve Porter
+In the legal system, it is often important to evaluate the credibility of memories for distant
+emotional experiences. The purpose ofthis study was to examine the characteristics of
+both traumatic and positive emotional memories as a function of interview style.
+Although previous studies have investigated the qualitative aspects of emotional
+memories, little is known about the influence of differential modes of recall on memory
+report characteristics and ratings of the psychological impact of the event. A comparison
+of four commonly used police and therapeutic interview styles (free narrative, cognitive
+interview, guided imagery, and written narrative) was conducted on both qualitative and
+quantitative characteristics of traumatic and positive memories reported in a community
+sample. Approximately 50 participants were interviewed at two time intervals. Further
+analyses were conducted on the consistency of traumatic and positive memories over
+time intervals of two to five months on a series of consistency questions and memory
+ratings (e.g., quality of memory, vividness/clarity). Results have important implications
+for understanding memory reports in the criminal justice system, and the variations in
+memory reporting that occurs as a function of various interview protocols.
+
+T 13. Uncovering The Mechanisms Establishing and Maintaining Sex Differences in Brain
+and Behaviour
+Tara Perrot-Sinai
+Rodents provide a useful model system in which to study sex differences and gonadal
+steroid action, at a behavioural and a cellular level. The importance of gonadal steroids
+during development for organizing sexually dimorphic neural circuitry is well
+established. However, until recently the molecular mechanisms underlying steroid action
+in developing brain were not known. We have recently elucidated a pivotal role for
+GABA in the developmental process of defining a male versus female brain. Once neural
+circuitry is sexually differentiated during development, gonadal steroids 'activate' this
+circuitry in adulthood resulting in behavioural sex differences. My current research focus
+is studying how stress responding differs between the sexes. This research has relevance
+for humans as the incidence of various stress-induced psychopathologies is higher in
+women than men. Using a natural model of stress, I have demonstrated that male and
+female rats differ in ethologically relevant behavioural responses and in neural activation
+(using c-fos protein induction as a marker) following the stressor. Future experiments
+will ( 1) examine sex differences in the effects of stress on cellular processes implicated in
+the development of stress-induced psychopathologies, and (2) investigate a causal role for
+gonadal steroids, both in adulthood and during development, in mediating sexually
+dimorphic responses to stress.
+
+T14. Mousing Around With Sensory Preconditioning: Part II
+Sarah E. Boudreau and Vincent M. LoLordo
+Little is known about the mouse's ability to associate neutral stimuli. Our research has
+focused on sensory preconditioning using the albino CD- I mouse. Training consisted of
+three phases. During Phase 1, mice were repeatedly presented with two pairs of odors.
+Odors were presented in small odor pots covered in bedding. Following Phase 1
+exposure, one odor from one pair was paired with a buried sugar reward (S+), and one
+odor from the other pair was presented without sugar (S-). Mice learned to dig in the
+bedding more to S+ than to S-. Finally, in Phase 3, mice were given a choice between the
+two odors that had not been conditioned. If a mouse had indeed formed a bond between
+the two odors in a pair during Phase 1, then the associate of S+ should have been the
+preferred odor. In several experiments, the associate of S+ was not preferred, though in a
+subsequent test, S+ was preferred to S-. In an effort to explain our failure to produce
+sensory preconditioning, two more experiments were conducted looking at the possibility
+of configuring and spontaneous configuring of odor compounds in Phase 1. Preliminary
+results from these two studies will be discussed.
+
+T15.
+
+Excuse me, your face is interfering with my Inhibition of Return.
+Kyle C. Owens
+Is inhibition of Return (IOR) affected by the biological significance of the target? IOR
+refers to the relative slowing of reaction times when responding to a target appearing in a
+cued versus uncued location. As faces are typical targets of a visual search, facial images
+were used as cues and targets and presented either intact as faces or scrambled as nonfaces. In Experiment 1 participants were presented with simplistic line and circle images
+of faces and exhibited no evidence of IOR. Experiment 2 used realistic facial images and
+IOR occurred only when a face was the target. Experiments 1 and 2 were repeated using
+a simple circle as the cue, and IOR then occurred for both face and non-face targets.
+Overall, IOR was affected by the complexity of the cue, and the biological significance of
+the target was important only when the cue and target were complex.
+
+T 16. There Is No Spatial Negative Priming
+John Christie
+All eight negative priming theories are based on a particular pattern of data, and most
+necessarily require this pattern. The pattern derives from a congruency hypothesis, "if
+items are congruent in a sequence of events then performance will be improved, else if
+items are incongruent then performance will be impoverished." In examining other
+relationships, besides those usually used to test negative priming, it was found that
+negative priming for spatial locations is not what it was once believed to be. It behaves
+more like inhibition of return, which does not follow a congruency hypothesis. This is
+important given the number of"negative priming" experiments that have been performed
+using the localization paradigm to test inhibition in populations. A reanalysis of location
+negative priming experiments needs to be performed given because costs in location
+negative priming are due to stimulation and not special treatment of the distractor.
+
+T17.
+
+Promiscuous (and Probably Perverted) Pairings of Peromyscus Produce a Plethora
+of Peculiar Progeny.
+Marleen H. M. de Groot & Benjamin Rusak
+Light can affect daily rhythms by entraining the endogenous circadian pacemaker that
+normally drives these rhythms, as well as by directly affecting (masking) the overt
+expression of behaviour. A novel photopigment, melanopsin, is hypothesized to mediate
+both of these effects, as well as pupillary responses to light, all of which survive loss of
+classical photoreceptors in the retina. Last year, we described a California mouse
+(Peromyscus ca/ifornicus) expressing a normal circadian rhythm that failed to entrain to
+the light/dark cycle, but whose activity was completely masked by light exposure. We
+have recently established that this mouse responds to visual stimuli and shows normal
+pupillary constriction in response to light. This animal's phenotype appears to have a
+genetic basis, since the progeny of selective crosses of his descendants showed similar
+abnormalities. These mice are the first example of animals expressing apparently normal
+circadian rhythms that are not entrained by light, but that still show potent masking
+responses to light exposure.
+
+T18.
+
+Looking for BrdU-incorporated hippocampal cells in an animal model of
+depression.
+Amanda Wintink
+Various theories exist regarding the aetiology of human depression. One theory of
+depression is that it is due to stress-induced decreases in hippocampal neurogenesis
+(Jacobs, Van Praag, & Gage, 2000). Support for this theory comes from observations of
+decreased hippocampal volume in individuals with depression and also from data
+showing that various antidepressant treatments in rodents increase hippocampal
+neurogenesis. The present experiment was, therefore, designed to examine hippocampal
+neurogenesis in animal model of depression. Olfactory bulbectomy (OBX) has been
+shown to cause depression-like symptoms and may occur through stress-mediated
+mechanisms. In the present experiment, adult male rats underwent OBX or sham
+surgery. Six weeks after surgery rats received 4 injections of BrdU ( a marker of mitotic
+activity; 50mg/kg, i.p.) and sacrificed 24 hrs after the last injection. Brains were
+processed using immunohistochemistry for BrdU-:incorporated cell identification. The
+results are discussed in relation to the neurogenesis theory of depression.
+
+T19.
+
+The Mood-Induced Activation of Alcohol Expectancies in Internally Motivated
+Drinkers
+Cheryl Birch, Sherry Stewart, Shondalee Eisnor, & Jennifer Theakston.
+This study investigated whether Coping Motivated (CM) and Enhancement Motivated
+(EM) drinkers differ in their activation of alcohol-related cognitions following exposure
+to musical mood induction procedures (MMIP). A total of 86 undergraduates who had
+elevated screening scores on either the CM or EM subscale of the Drinking Motives
+Questionnaire (DMQ-R; Cooper, 1994) participated in this experiment. Half the people
+in each motive group were randomly assigned to a positive mood condition and the other
+half to a negative mood condition. The Alcohol Craving Questionnaire (ACQ; Singleton,
+Tiffany & Henningfield, 1994) was administered at baseline and following the MMIP to
+assess phasic changes in alcohol-related cognitions. After an ANCOV A was used to
+adjust for motive-group differences in baseline mood state, it was evident that the
+MMIP's induced the intended target moods for all groups. The mood induction operated
+specifically to trigger different alcohol expectancies for CM and EM drinkers. Consistent
+with hypotheses, planned comparisons revealed that only CM drinkers in the negative
+(but not the positive) mood condition reported significant increases in expectancies that
+alcohol would relieve negative mood states. Also consistent with hypotheses, only EM
+drinkers in the positive (but not the negative) mood condition reported increases in
+beliefs that alcohol would enhance positive affective outcomes. Theoretical and clinical
+implications will be discussed.
+
+T20.
+
+In Win, Lose, and Booze: Implicit Gambling Outcome - Alcohol Associations
+In Problem Gamblers
+Sherry Stewart, Martin Zack (CAMH, ARF site), Pamela Loba, & Ray Klein
+Although prior research shows that most gamblers drink alcohol while gambling, the
+functional relationship between particular gambling events (e.g., wins, losses) and
+alcohol use remains unknown. This study examined priming of alcohol cognition by
+gambling gain and loss events among gamblers with differing histories of drinking in
+response to these events. A stronger tendency to drink following a particular gambling
+outcome (win, loss) was predicted to coincide with a stronger association between that
+outcome and alcohol in memory, resulting in greater priming on an implicit association
+task (!AT). Participants were community-recruited problem gamblers. On the IAT, gain
+(e.g., winnings) and loss (e.g., bankrupt) words were paired with alcohol (e.g., vodka) or
+non-alcohol (e.g., lemonade) words and participants made a category judgment (e.g.,
+alcohol vs. non-alcohol) to each word by pressing one of two response keys. Participants
+also reported how likely they were to drink when they won and lost at gambling.
+Preliminary analyses indicate that history of loss-based drinking did not influence
+priming of alcohol concepts by exposure to loss cues on the !AT. However, the predicted
+association was observed between gain events and alcohol in those who reported a
+history of win-based drinking.
+
+T21.
+
+Effect oflnsulin-like Growth Factor-1 on Functional Recovery Following Cerebellar
+Injury.
+Laura P.R. Reynolds and Gary V. Allen, Department of Anatomy & Neurobiology,
+Faculty of Medicine, Dalhousie University
+Introduction: Insulin-like growth factor (IGF-1) acts as a non-selective neurotrophic
+agent in the adult brain in response to injury. IGF-1 has been shown to mediate levels of
+Calbindin-28kD in Purkinje cells and promote climbing fiber re-innervation. Our aim was
+to determine whether administration of exogenous IGF-1 following severe cerebellar
+injury would enhance recovery of motor function. Methods: A weight drop model of
+brain injury was used to induce severe damage to the left paravermal cerebellar cortex in
+the anesthetized adult rat. Treatment animals (n=6) received 3 series of direct IGF-1
+injections (l.25mg/kg) 2 mm deep into the cerebellar cortex immediately before injury
+and 24 hour and 48 hours post-injury. Control animals (n=6) received severe injury
+followed by a series of PBS injections (0.05 M, pH=7.4) into the cerebellar cortex. Sham
+animals (n=4) received craniotomy without injury or injection. Animals were tested for
+motor function using the beam-walking test. Results: Motor recovery rates were
+significantly enhanced in treated animals compared to controls (p < 0.01). Animals that
+received IGF-1 injections approached near recovery levels by day 15. In contrast, the
+motor function of control animals failed to reach near recovery levels by day 29.
+Conclusions: These findings suggest that post-injury treatment with IGF-1 is an effective
+means of enhancing motor function following severe cerebellar injury. Analysis of brain
+sections for the immunohistochemical detection of Hsp27, Calbindin-28kD, Parvalbumin
+and Glycogen Synthase Kinase 3~ are currently in progress to reveal the role ofIGF-1 in
+cell survival and to determine the intracellular mechanism of action of IGF-1. (Supported
+by Nova Scotia Health Research Foundation)
+
+T22.
+
+Differential Effects of Kindling Different Brain Regions on Kindling-Induced
+Emotionality
+AC Davis, V Thome, A Gregus, AJ Wintink and LE Kalynchuk.
+Amygdala kindling dramatically increases emotionality in rats and is considered a good
+model of the behavioural changes associated with temporal lobe epilepsy. Less well
+studied have been the effects of kindling other brain regions on changes in emotionality.
+One study has shown that kindling the dorsal hippocampus causes increased emotionality
+whereas caudate kindling does not (Kalynchuk et al, 1999). The purpose of this study
+was to further study the effects of kindling both limbic and non-limbic regions on
+kindling-induced emotionality. Rats were given either 99 kindling or sham stimulations
+of the left amygdala, caudate, claustrum, bed nucleus of the stria terminal is (BNST), or
+perirhinal cortex. After kindling the rats were tested on the open field, elevated plus
+maze, and forced swim test. Amygdala-, BNST- and perirhinal-kindled rats showed
+increases in emotionality on all tests compared to controls. In contrast, caudate and
+claustrum kindling did not significantly increase emotionality. These results demonstrate
+that kindling-induced emotionality is only produced by kindling of specific brain regions.
+
+T23.
+
+Effects of Repeated Corticosterone and Restraint Stress on Anxiety and Depressionlike Behavior in Male Rats.
+Gregus A*, Davis, AD, Wintink, A J, Kalynchuk, LE
+Repeated stress increases glucocorticoids and is associated with the development of
+affective psychopathology in humans and maladaptive behavioral changes in rats. It is
+well established that stress-induced corticosterone (CORT) impairs cognitive functioning
+in rats; however, little is known about its effects on affective behavior. Accordingly, the
+present study examined the effects of two repeated stressors, restraint and CORT
+injections, on changes in emotional behavior in male rats. Rats received either CORT
+injections (40mg/kg s.c.), vehicle injections, restraint stress (6hrs/day), or handling every
+day for 21 days prior to and during behavioral testing. Starting on day 22, animals were
+tested for changes in fearful/anxious behavior in the open field, and the elevated plus
+maze, and for symptoms of depression in the forced swim test and sucrose consumption
+test. Results revealed that neither CORT nor restraint altered motor or anxiety-related
+behavior the open field or the elevated plus maze. However, CORT increased the
+frequency and time spent immobile in the forced swim test compared to vehicle injected
+controls. Additionally, CORT significantly decreased the proportion of sucrose-to-water
+solution consumed compared to vehicle injected rats in the sucrose consumption test.
+Restraint did not alter behaviors in the forced swim or sucrose consumption tests. These
+results suggest that repeated CORT injections produce behaviors associated with
+depression and that neither CORT nor restraint increase anxiety-like behavior in male
+rats.
+
+T24.
+
+Evoked Potentials In Coma Populations
+Bernier, D., Marchand, Y., Rahey, S., Striemer, C., Young, G. B., & Connolly, J. F.
+A variety of electrophysiological protocols will be used to evaluate the functional state of
+cortical and subcortical structures of patients in coma following traumatic head injury.
+The population to be investigated will be patients between 18-50 years of age. Testing
+will start as early as possible after the injury and will be repeated on a regular basis for a
+period of six months. The battery of assessments includes Somatosensory Evoked
+Potentials, Brain Stem Auditory Evoked Potentials, as well as Event-Related Potentials
+associated with pre-conscious attention mechanisms(MMN) and higher level semantic
+functions (N400). The ultimate goal is to investigate which measures will reliably predict
+return to consciousness, and to investigate cognitive function in coma and at emergence.
+
+T25.
+
+Effect Of Postnatal Handling On The Emotional Behaviour Of Adult AmygdalaKindles Rats
+Anna Lee & Lisa Kalynchuk
+Long-term amygdala kindling in adult rats produces high levels of anxiety, and is often
+used as an animal model for studying the emotionality associated with human temporal
+lobe epilepsy. Brief handling in early-life decreases anxiety and the behavioural
+responses to stressors encountered in adulthood. The present study examined whether
+postnatal handling would reduce the development of emotionality in adult amygdalakindled rats. Male rats were handled for
+the first 14 days of life or left undisturbed. At adulthood, rats were either left
+undisturbed in their home cage or received sham stimulations, or 10, 25 or 60 amygdalakindling stimulations and were tested for changes in anxiety and depression. Kindling
+produced increases in emotional behaviour, consistent with previously published
+findings. However, postnatal handling had no effect on kindling-induced emotionality,
+suggesting that variations in early environmental experience do not play a role in the
+development of epilepsy-induced emotionality.
+
+T26.
+
+Caffeine-induced activation of orexin neurons
+Jeremy A. Murphy and Kazue Semba
+Neuroscience Program, and Departments of Anatomy & Neurobiology, and Psychology.
+Caffeine is the most commonly used psychostimulant. Orexins are novel neuropeptides,
+found in posterior hypothalamic neurons, which are suggested to participate in normal
+wakefulness, feeding as well as in the neuropathology of the sleep disorder narcolepsy.
+We investigated whether stimulant doses of caffeine activate orexin-containing neurons
+in rats, using c-Fos as a neuronal activation marker. We confirmed that caffeine increased
+locomotion at low doses (10 and 30 mg/kg), while inhibiting locomotion at a high dose
+(75 mg/kg); saline had no effect. In the same animals, all doses of caffeine increased the
+number of c- Fos expressing, orexin neurons by approximately 200%, whereas a similar
+degree of activation of non-orexin neurons occurred only after the highest dose. These
+results indicate that orexinergic neurons are selectively activated by stimulant doses of
+caffeine, and suggest that the activation of orexin neurons, either directly or indirectly,
+play a role in mediating behavioural activation by caffeine.
+
+T27.
+
+Evidence for Neural Plasticity Following Reading Remediation Training
+Randy Lynn Newman
+The present study recorded ERPs as participants, with and without phonological
+processing deficits performed a modified phoneme deletion task. Participants in the
+phonologically impaired (Pl) group were enrolled in a reading remediation program
+(Spell Read) and were tested prior to receiving instruction and at specified time points
+during the program (i.e., 20 hours, 40 hours, completion of program). Participants heard
+instructions asking them to omit the initial phoneme from a monosyllabic word (e.g.,
+Clap without the /Cl sound). This was followed (ISi = 2 sec) by presentation of the
+correct (e.g., Lap) or incorrect answer (e.g., cap). In the control group, two ERP
+components were elicited: the Phonological Mismatch Negativity (PMN), a component
+linked to phonological analysis was largest to incorrect items, and the P300, a component
+associated with memory recognition was largest to correct items. In the PI group, the
+PMN and P300 responses were atypical (i.e., small, absent, delayed) prior to receiving
+reading instruction. However, after only 20 hours of training, both the PMN and P300
+responses began to normalize relative to the control group. These results have been
+observed in both children and adults indicating that changes observed in children are not
+solely the result of ongoing neural development.
+
+T28.
+
+"Eight Decades of Measurement in Depression"
+Darcy Santor
+Since 1930, some 400 instruments and measures have been developed to assess and
+diagnose depression. These measures differ in content, response format and in
+objectives. Although there are good reasons for constructing different measures of
+depression, the large number of often diverse measures created over the past 80 years
+creates its own challenge to one of the main goals of measurement, namely to standardize
+assessment and streamline decision-making. The proposed talk reviews some of the many
+important psychometric techniques and substantive developments that have impinged
+directly on these measurement goals, including (a) the need for impossibility equating
+different scales, (b) item content heterogeneity, and (c) potential difficulties associated
+with the use of principal components analysis for developing short forms. Many of these
+challenges can be resolved through the use of techniques based on item response models.
+
+T29.
+
+Sleep Deprivation Effects on Magnetic Resonance Spectroscopy and Mood in Major
+Depressive Disorder
+Bernier, D., MacMaster, F., Gates, L., Kusumakar, V., Rusak, B.
+A variety of studies using different methods of imaging brain structure and function have
+reported changes associated with major depressive disorder (MOD). PET and functional
+magnetic resonance imaging (fMRI) studies have reported decreased metabolic activity in
+the dorsolateral prefrontal cortex (PFC), concurrently with increased activity in the
+ventrolateral PFC. Differences in metabolic activity have also been reported in the
+anterior cingulate, the temporal lobe, and some subcortical structures, including the
+hippocampus and parahippocampus. Many of these abnormalities are reversed after
+successful antidepressant treatments. Pharmacological treatments generally take weeks to
+achieve their effects, making it difficult to identify the steps leading to these changes.
+Partial overnight sleep deprivation has been shown consistently to produce transient but
+very substantial mood improvement in more than 50% of patients suffering from MOD.
+This provides an opportunity to study brain changes within hours of an effective
+treatment. Single-proton, magnetic resonance spectroscopy (H-MRS) allows detection of
+some neurochemical changes in targeted brain regions that are not detected by other
+functional brain imaging methods. We have been using H-MRS to investigate the effects
+on features of the MR spectra that represent levels of choline and levels of
+glutamate/glutamine/GABA in several brain regions after sleep-deprivation induced
+mood improvement. Preliminary results demonstrating rapid changes in brain
+neurochemistry associated with mood improvement will be presented.
+
+Pl.
+
+A Case Study of the Effects of Neglect on Reading
+J. Klages, J. Ingles & G. Eskes
+SS is a 66 year-old white male who had a right hemisphere infarct affecting the basal
+ganglia, posterior temporal and occipital lobes, associated with impaired left-sided
+sensory and motor function and left hemi-spatial neglect. Clinical neuropsychological
+screening with the Cognistat on admission to a Rehabilitation service showed no
+evidence of dementia and severe left-sided neglect on the Behavioural Inattention Test.
+Further testing of his neglect revealed evidence for neglect based on sensory/perceptual
+rather than motor mechanisms, and object-centered left-sided errors or omissions,
+suggesting a representational deficit. Neglect dyslexia was also seen in his reading errors
+and omissions on the left side of single words. Interestingly, his reading errors were
+significantly higher for regular words (13/30) and non-words (14/30), then for matched
+irregular words (2/30), suggesting different forms of lexical representations and/or
+processing as revealed by the differential effects of neglect. To our knowledge, this
+difference between regular and irregular words has not been previously reported in the
+literature and will be valuable in developing a fuller understanding of normal reading
+processes as well as lexical neglect.
+
+P2.
+
+What does your personality say about your reasons for drinking?
+J. A. Theakston 1, S. H. Stewart 1, M. Dawson 2 , D. Lehman2, S. Knowlden 2
+The present study sought to replicate and extend research on the relationships between
+five-factor personality models and motivations for drinking alcohol. Undergraduate
+students (n = 571) completed the Drinking Motives Questionnaire-Revised (Cooper,
+1994) and the 100-item International Personality Item Pool questionnaire (Goldberg,
+1999) measuring the Big-Five personality domains. Multiple regression analyses
+revealed that personality domains predicted both external (Conformity and Social), and
+particularly, internal (Coping and Enhancement) drinking motives after accounting for
+demographics and alternate drinking motives. Replicating previous findings with the
+NEO personality scales, Coping motives were predicted by low Emotional Stability, and
+Enhancement motives were predicted by high Extraversion and low Conscientiousness.
+High Intellect/Openness and low Agreeableness also predicted Enhancement motives,
+and low Extraversion predicted Coping motives. High Emotional Stability predicted
+Conformity and high Agreeableness predicted Social motives. Low Intellect/Openness
+also predicted both external motives. Thus, converging evidence suggests the presence of
+personality risk factors associated with risky reasons for drinking.
+
+P3.
+
+11
+
+An Investigation of the Ability of Individuals to Detect Deception in Criminal
+Off enders. 11
+Naomi Doucette
+Because nearly all studies examining the detection of deceit have focused on university
+student samples, the generalizability of the findings to forensic settings is questionable.
+Given the importance of detecting deception in forensic settings, the present study
+examined how well people were able to detect deception in a sample of incarcerated
+criminal offenders. Undergraduate students (N = 103) viewed a series of eight
+videotaped segments in which offenders related truthful or deceptive autobiographical
+events of a positive or negative valence. The results illustrated that, contrary to the main
+hypothesis, the participants were able to make accurate judgments about the veracity of
+the statements at a level that was significantly above chance (M = 66%) and higher than
+that seen in previous studies with non-offenders. In addition, it was found that
+participants were most accurate at judging positive deceptive statements (76%).
+
+P4.
+
+Strain differences in locomotion, anxiety and spatial learning and memory
+performance between C57BL/6J and 129S3 mice.
+Martin Williamson
+This study examined strain and sex differences in locomotion, anxiety and spatial
+learning and memory in male and female C57BL/6J and 129S 1 mice using a behavioral
+test battery. The elevated zero and elevated plus maze, light-dark box test and open field
+indicated that the C57BL/6J mice had higher levels of locomotor and exploratory
+behavior that the 129S1 mice, while the 129S1 mice demonstrated higher levels of
+anxiety than the C57BL/6J mice. The Barnes maze and Morris water maze were used as
+tests of spatial learning abilities. In the Morris water maze, there were no strain or sex
+differences in latency to or distances to reach the platform, however the C57BL/6J swam
+substantially faster than the 129S1 mice. During the probe trial, both C57BL/6J and
+129S1 strains displayed more time spent in the correct quadrant, demonstrating that
+learning had occurred, though there was no strain or sex difference noted. Strain and sex
+differences in both neuromuscular function were shown as the C57BL/6J mice remained
+on the rotating rod significantly longer than did the 129S 1 mice, while the females
+performed better than the males. This study indicated that the 129S1 strain exhibit greater
+levels of anxiety than C57BL/6J however can perform equally well as the C57BL/6J
+mice under appropriate test conditions as shown in motor and spatial learning.
+Nonetheless, more general conclusions on the abilities of the 129S1 strain cannot be
+drawn, since variability between the 129 substrains exists and only one was tested here.
+
+PS.
+
+Response Patterns as a Function of Guilty Knowledge Related to a Mock Crime
+Cathy Stewart, Stephen Porter, & Mary Ann Campbell
+Although criminal investigations often hinge on the identification of deceptive
+responding in suspects, little is known about the manner in which deceptive individuals
+attempt to mask their knowledge of a crime. In the present study, N = 87 undergraduates
+either: (a) committed a mock theft and had full knowledge of the crime (Perpetrators); (b)
+had knowledge only of the crime-scene (Scene Witness); or (c) had no knowledge of the
+crime or crime-scene (Naive Responders). All participants completed a questionnaire
+about their knowledge of the theft - the Guilty Knowledge Questionnaire (GKQ).
+Half of the perpetrators were instructed to avoid being caught (i.e., lie) on the GKQ,
+while the remaining participants were instructed to respond honestly. Deceptive
+Perpetrators reported less accurate knowledge (31%) than Honest Perpetrators (80%) and
+Scene Witnesses (49%), but did not significantly differ from Naive Responders (29%).
+Individuals attempting to mask knowledge of a crime may mirror the response patterns of
+those naive to the crime and crime-scene. Implications for police interrogations are
+discussed.
+
+P6.
+
+Contractile Activity Of Skeletal Musculature Involved in Breathing is Essential for
+Normal Lung Organs Genesis
+Mohammad R. Inanlou, G. Andrew M. Reid and Boris Kablar, Department of Anatomy
+and Neurobiology
+Mouse fetuses that develop without both Myf5 and MyoD entirely lack skeletal
+myogenesis (i.e., amyogenic fetuses) and as a consequence perform no fetal breathing
+movements (FBMs). By employing amyogenic fetuses we tested the hypothesised
+influence of FBMs on cell fate and differentiation in the lung. To study cell
+differentiation, we performed immunohistochemistry against surfactant protein (SP)-A, B, -C and AD.We also examined cell cycle kinetic, using immunohistochemistry against
+proliferating cell nuclear antigen (PCNA) and in situ detection of programmed cell death
+(TUNEL). Mutant lung tissue was examined at pseudoglandular (embryonic day, E,
+15.5), canalicular (E16.5) and terminal (E17.5-19.5) stage of lung development. We
+found: (a) an underdeveloped alveolar system, (b) increased cell death, (c) decreased cell
+proliferation and (d) down-regulated SP-D. In conclusion, our preliminary data
+suggest that FBMs influence development of the terminal part of the bronchial tree,
+where the gas exchange normally occurs, by controlling cell differentiation and
+functional maturation and by affecting cell cycle kinetic through unknown
+mechanochemical signal transduction pathways (Supported by an NSERC operating
+grant to B. K.).
+
+P7.
+
+Neuroimaging Studies of Pediatric Attention-Deficit/Hyperactivity Disorder
+Sandra Sparkes, Frank P. MacMaster, Normand Carrey and Vivek Kusumakar
+Attention-Deficit/Hyperactivity Disorder is a prevalent and debilitating illness affecting
+3-6% of children. Past studies have implicated the cerebellum in the pathophysiology of
+the illness. The corpus callosum has also been implicated in ADHD, although not
+consistently. Methods: 13 ADHD children (7-11 years, 8 males, 5 females) and 13
+healthy controls (7-11 years, 9 males, 4 females) underwent magnetic resonance imaging
+(MRI) scans. Results: Body I in the corpus callosum was significantly smaller in ADHD
+children as compared to controls. No other corpus callosum region differed between
+groups. Cerebellum vermis was also reduced in ADHD subjects as compared to controls.
+Conc!usions: Reductions in Body I and the vermis may reflect the abnormalities noted in
+motor behavior and inhibition respectively.
+
+PS.
+
+Pain and pain management: Attitudes and practices of adolescents.
+Jill E. Hatchette, MSc, Patrick J. McGrath, PhD & Michael Murray, PhD
+Objective: To describe adolescents' attitudes toward pain and pain management
+strategies, knowledge of over-the-counter analgesics (OTCs) as well as the social
+influences and gender differences apparent in pain management practices, attitudes
+and knowledge.
+Design: Focus groups.
+Setting: Junior high school and the meeting room of a local mall.
+Main Outcome Measures: Demographic data collected from participants via questionnaire prior to
+focus group discussions. Content analyses of transcripts to interpret statements within the context of
+categories formulated a priori from existing literature.
+Participants: Junior high school adolescents (grades 7, 8 and 9) participated in the
+sessions.
+Results: Adolescents' attitudes toward OTCs ranged from negative (e.g. unnatural, over-used,
+largely placebo) to positive (e.g. a preference to be pain free). Females indicated independence in
+self-administering OTCs - a gender difference not attributable to onset of menstruation -both male
+and female adolescents cited sports injuries as their most frequent pain-related complaint. With
+respect to knowledge adolescents expressed importance of reading the label, but also based dosing
+on irrelevant factors like perceived effect, size of pill and age estimation. Parental role in OTC use
+included approval seeking, availability & talk (particularly to mother). Peer role in OTC use
+included availability and talk. Gender differences were apparent in both parental and peer roles;
+parents encouraged males to use physical methods of pain relief & females to take OTCs. In
+discussing pain with peers males indicated more qualifiers; where females were likely to talk about
+their pain "all the time", males tended to minimize pain that resulted from their own mishaps.
+Conclusions: This study is the first of a series designed to understand adolescents' attitudes toward
+pain & pain management strategies. The findings yield additional research questions to be
+investigated in a second study addressing the emergence of attitudes within the family dynamic.
+
+P9.
+
+Glutamate Injection into the Rat Motor Cortex Conditions Against Subsequent
+Brain Injury Induced Motor Dysfunction
+Amanda Arnold and Gary V. Allen, Department of Anatomy & Neurobiology, Faculty of
+Medicine, Dalhousie University
+
+Introduction: Repetitive mild injury to the rat primary motor cortex has been shown to
+produce a conditioning effect, so that subsequent severe injury to the same site has no
+effect on motor function. The present study investigates whether local glutamate release
+following repeated mild injury is a mechanism for this conditioning effect.
+Methods: Adult male, Sprague-Dawley rats were trained on a beam-walking task, and
+received a series of glutamate or phosphate buffered saline (PBS) injections, spaced three
+days apart, into the rat hindlimb motor cortex. A second group of trained animals
+received either glutamate or PBS injections and a subsequent severe brain injury three
+days after the last injection.
+Results: Animals with repeated PBS or glutamate injections showed no motor deficits in
+the beam-walking task. Animals with repeated PBS injections followed by severe brain
+injury had significant motor deficits, whereas animals with repeated glutamate injections
+prior to severe brain injury had no significant motor deficits in the beam-walking task.
+Groups of animals with either repeated glutamate or PBS injections and severe brain
+injury had similar necrotic cavity volumes in the hindlimb region of the primary motor
+cortex. Animals with repeated glutamate injections showed patterns of heat shock
+protein 27 and glial fibrillary acidic protein expression that was similar to that seen
+following repeated mild brain injury.
+Conclusions: This data suggests that the conditioning effects on motor function seen
+after repetitive mild brain injury may involve local glutamate release from injured
+neurons and subsequent activation of secondary motor control sites. (Supported by the
+Nova Scotia Neurotrauma Society)
+PlO.
+
+The Jax Phenome Project: Anxiety, Locomotion and Spatial Memory in A/J,
+Balb/cByJ and Molf/ei mouse strains
+Christianne Hawken, Krista Luedemann & Richard Brown
+The purpose of this research was to create a comprehensive database of behavioral
+phenotypes for inbred mouse strains. We examined the behaviour of twenty-four A/J,
+Balb/cByJ and Molf/ei mice on measures of exploration, anxiety, learning and memory in
+a standardized test battery (Brown et al., 2000). Anxiety-related behaviors were measured
+using the elevated zero maze, elevated plus maze and light-dark box test. Exploration and
+locomotor ability were tested in the open field and Rota Rod. Spatial memory was
+examined using the Morris water maze and Barnes maze. There were significant
+differences among the three strains. The A/J strain was the most anxious in the elevated
+plus maze, elevated zero maze and the light/dark box. The Molf/ei had the greatest
+locomotor ability and explored to a greater extent in the open field than the other strains.
+In addition, the Molf/ei strain had the best spatial ability of the three strains in both the
+Barnes maze and Morris water maze.
+
+Pl 1.
+
+Effect of Methylphenidate Hydrochloride (Ritalin) Administration on Locomtor
+Activity, Emotional Behaviour and Spatial Learning in C3H/HeSnJ Mice
+Tera M.Mosher & Richard E. Brown
+Attention Hyperactivity Disorder (ADHD) is a neuropsychological disorder prevalent in
+3-5% of children. The three major characteristics of ADHD are hyperactivity, impulsivity
+and inattention. Currently, ADHD is treated through a variety of methods, including the
+use of psychostimulants. Ritalin is the treatment used by the majority of those diagnosed
+with ADHD because it decreases hyperactivity allowing subjects to concentrate more
+effectively. There are, however, few animal studies concerned with the effects of Ritalin
+on behaviour. In particular, it is important to ensure that drugs which alter hyperactivity
+do not impair cognitive function (e.g. Learning and Memory). The focus of the present
+study is to determine the effects of Ritalin vs. saline injections on locomotor activity,
+emotional behaviour and spatial learning in C3H/HeSnJ mice, which are not hyperactive.
+These mice were tested in the elevated plus maze, open field and Morris water maze. In
+the elevated plus maze the Ritalin-treated mice spent more time in the open arms than
+saline-treated mice. In the open field, mice treated with Ritalin were significantly more
+active than those treated with saline. In the Morris water maze there was no effect of
+Ritalin treatment on the latency to reach the platform. From these results we conclude
+that Ritalin increases locomotor activity, and decreases emotionality, but does not effect
+spatial learning and memory. Our next experiment will compare the effects of MPH on
+the hyperactive coloboma mouse with those of the control mice. We expect that MPH
+will reduce locomotor activity in these mice.
+
+

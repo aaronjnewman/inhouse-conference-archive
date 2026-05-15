@@ -1,0 +1,49 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+Copyright (c) 2026 Aaron J. Newman and the Dalhousie Department of
+Psychology & Neuroscience In-House Conference contributors
+
+You are free to:
+
+  Share   — copy and redistribute the material in any medium or format.
+  Adapt   — remix, transform, and build upon the material for any purpose,
+            even commercially.
+
+Under the following terms:
+
+  Attribution — You must give appropriate credit, provide a link to the
+  license, and indicate if changes were made. You may do so in any reasonable
+  manner, but not in any way that suggests the licensor endorses you or your
+  use.
+
+  No additional restrictions — You may not apply legal terms or technological
+  measures that legally restrict others from doing anything the license
+  permits.
+
+Full license text:  https://creativecommons.org/licenses/by/4.0/legalcode
+
+Suggested citation:
+
+  Newman, A. J. (compiler) (2026). Dalhousie In-House Conference Archive,
+  1975–2026. BibTeX corpus of 2,155 presentation records. Available at
+  github.com/aaronjnewman/inhouse-conference-archive (and via Dalhousie
+  Borealis: <DOI forthcoming>).
+
+----------------------------------------------------------------------
+
+Scope:
+
+This license covers the *data components* of the repository, namely:
+
+  - The conference program source files (`In-House Program *.{pdf,doc,...}`)
+  - The structured BibTeX corpus `inhouse_conference.bib`
+  - The hand-curated correction sidecars (`corrections.jsonl`, `descriptions
+    of specific issues to fix.md`)
+  - The image files (`GrahamGoddard_photo.jpg`, `Klein graphic.png`,
+    `program_1975*.{jpg,png}`)
+
+Original copyright in the underlying conference programs and abstracts
+remains with the individual authors / presenters; the licensee here grants
+the compilation under CC BY 4.0 for archival and research-data-mining use.
+
+The software components used to build and analyse this corpus are released
+separately under the MIT License; see `LICENSE-CODE`.
