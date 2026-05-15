@@ -87,7 +87,7 @@ because the deck embeds PNGs from the `figures/` directory.
 
 For a *new conference year* (e.g. adding 2027):
 
-1. Drop `In-House Program 2027.{pdf,...}` into the project root.
+1. Drop `In-House Program 2027.{pdf,...}` into `source_programs/`.
 2. Add a `parse_2027` (or reuse an existing parser) in `pipeline/02_parse.py`
    and wire it into the dispatcher.
 3. Add a 2027 entry to `pipeline/booktitles.py`.

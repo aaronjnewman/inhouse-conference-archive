@@ -15,6 +15,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
+SOURCES_DIR = ROOT / "source_programs"
 EXTRACTED = ROOT / "extracted"
 EXTRACTED.mkdir(exist_ok=True)
 
@@ -70,8 +71,13 @@ def get_year(path: Path) -> int | None:
 
 def gather_sources() -> dict[int, list[Path]]:
     """Collect all source files grouped by year."""
+    if not SOURCES_DIR.is_dir():
+        raise SystemExit(
+            f"Source directory not found: {SOURCES_DIR}\n"
+            "Place 'In-House Program YYYY.*' files inside it."
+        )
     sources: dict[int, list[Path]] = {}
-    for p in sorted(ROOT.glob("In-House Program *.*")):
+    for p in sorted(SOURCES_DIR.glob("In-House Program *.*")):
         if p.suffix not in EXTRACTORS:
             continue
         year = get_year(p)

@@ -19,14 +19,16 @@ style: |
     font-family: "Public Sans", sans-serif;
   }
   section.title h1 { color: #000; font-size: 3.0em; margin-bottom: .1em; font-weight: 900; letter-spacing: -1px; }
+  section.title h1 em { color: #086554; font-style: normal; }
   section.title h2 { color: #000; font-weight: 500; font-size: 1.5em; }
   section.title p  { color: #000; font-weight: 400; font-size: 0.95em; }
   section.title hr { border-color: #000; opacity: 0.4; max-width: 60%; }
-  h1 { color: #1a1f3a; border-bottom: 4px solid #FFC72C; padding-bottom: 6px; font-weight: 800; }
-  h2 { color: #293F88; font-weight: 700; }
-  strong { color: #A33E3E; }
+  h1 { color: #1a1f3a; border-bottom: 4px solid #FFD400; padding-bottom: 6px; font-weight: 800; }
+  h1 em, h1 strong { color: #086554; font-style: normal; }
+  h2 { color: #234BA0; font-weight: 700; }
+  strong { color: #A72836; }
   blockquote {
-    border-left: 6px solid #FFC72C;
+    border-left: 6px solid #FFD400;
     padding: 4px 18px;
     color: #333;
     background: #fff8e0;
@@ -34,20 +36,20 @@ style: |
   }
   code { background: #eee; padding: 2px 5px; border-radius: 3px; font-size: 0.85em; }
   table { font-size: 0.85em; }
-  th { background: #293F88; color: #FFC72C; }
+  th { background: #234BA0; color: #FFD400; }
   tr:nth-child(even) { background: #f0eee5; }
   .small { font-size: 0.75em; color: #555; }
   .caption { font-size: 0.7em; color: #555; text-align: center; margin-top: 4px; }
   .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
   .quote-card {
     background: #fff;
-    border-left: 5px solid #293F88;
+    border-left: 5px solid #234BA0;
     padding: 10px 16px;
     margin: 8px 0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     font-size: 0.82em;
   }
-  .quote-card .year { color: #A33E3E; font-weight: 700; margin-right: 8px; }
+  .quote-card .year { color: #A72836; font-weight: 700; margin-right: 8px; }
   .quote-card .authors { display: block; color: #666; font-size: 0.85em; margin-top: 4px; }
 ---
 
@@ -73,7 +75,7 @@ Aaron J. Newman · 50th Annual Graham Goddard In-House Conference · 2026
 - Built the early Dalhousie animal-learning + neurophysiology group
 - Founded what we now call the **In-House Conference**
 
-In 2011, **24 years after his death**, the conference was renamed in his honour. Everything that follows is, in a real sense, his department.
+In 2011, **24 years after his death**, the conference was renamed in his honour.
 
 ---
 
@@ -86,13 +88,13 @@ The very first In-House: Tuesday April 8 – Wednesday April 9, 1975. **Coffee a
 The first ever abstract:
 > *C. McNaughton — "Circadian Rhythm in Perforant Path Synaptic Efficacy"*
 
-Note the handwritten *"R. Brown"* in the top corner. **That's the same copy still living in his filing cabinet 51 years later.**
+Note the handwritten *"R. Brown"* in the top corner. **That's the same copy still living on his bookshelf 51 years later.**
 
 ---
 
 # Why are we doing this?
 
-We have **50 conference programs** sitting in a OneDrive folder.
+After scanning early programs, we have **50 conference programs** sitting in a OneDrive folder.
 
 Half a century of:
 
@@ -100,9 +102,9 @@ Half a century of:
 - generations of trainees
 - decades of departmental memory
 
-…and absolutely **zero ability to search any of it.**
+…and **zero ability to search any of it.**
 
-> Goal: turn paper, scanned PDFs, and Word documents into a **structured, queryable, archival record** of who did what — and when.
+> Goal: turn paper, scanned PDFs, and Word documents into a **structured, queryable, archival record** of who did what, and when.
 
 ---
 
@@ -118,7 +120,7 @@ The corpus then becomes a substrate for:
 
 ---
 
-# Acknowledgements (before we go any further)
+# Acknowledgements
 
 The programs do not exist as a set. They were **rescued** by:
 
@@ -126,11 +128,11 @@ The programs do not exist as a set. They were **rescued** by:
 - **Suzanne King** — gap-filling from her own archive
 - **Susan Lowerison** — additional gap-filling and document recovery
 
-A genuine **community archaeology** effort. Without their filing cabinets, none of this exists.
+A genuine **community archaeology** effort. Without their records, none of this exists.
 
 ---
 
-# Prior art (we are not the first)
+# Prior art 
 
 ![h:520 bg right:55% contain](figures/klein_graphic.png)
 
@@ -138,11 +140,11 @@ Ray Klein, ~2010 — a hand-drawn plot of **# papers / year** through the first 
 
 The dotted region pre-1988 was the **paper-only era**; the rest was scraped from emerging electronic programs.
 
-*Tonight: the same idea, with 16 extra years of data and a few thousand presentations more.*
+*Today: the same idea, with 16 extra years of data and a "few" more data points.*
 
 ---
 
-# The source material is… **a mess**
+# The source material is… **a challenge**
 
 | Decade | Format |
 |---|---|
@@ -152,24 +154,26 @@ The dotted region pre-1988 was the **paper-only era**; the rest was scraped from
 | 2003–2013 | `.doc` files (some of which Word itself refuses to open) |
 | 2014–2026 | mostly PDF, a stray `.docx` and `.rtf` |
 
-50 years of file formats. The OCR for **1975** alone produced gems like:
+Richard's hand-written notes created further challenge for OCR.
+50 years of file formats. Inconsistent formatting.  
+
+The OCR for **1975** alone produced gems like:
 
 > *"Mus l<usicus."* — J. C. Fentress, 1977
 > *"f:lart·;n, H.L"* — somebody named Martin, probably
 
 ---
 
-# The OCR's worst day (and a personal favourite)
+# The Challenge for OCR (and a personal favourite)
 
 ![h:580 bg right:55% contain](figures/program_1975b.png)
 
-Rodger's **"The Present State of Rodger's Stats"** (1975) — an abstract written almost entirely in **formulae**. Tesseract, gamely:
+Rodger's **"The Present State of Rodger's Stats"** (1975) — an abstract written almost entirely in **formulae**. 
 
 > *"H<sub>0</sub> : θ<sub>1</sub> = θ<sub>2</sub> = … = θ<sub>j</sub>"*
 
-…sometimes became *"H'O : 0'1 = 02 = ... = OJ"*.
+…was read as *"H'O : 0'1 = 02 = ... = OJ"*.
 
-You can also see the OCR engine **duplicating the last paragraph** at the bottom — a recurring failure mode that drove three rounds of cleanup logic.
 
 ---
 
@@ -207,12 +211,12 @@ The parser was **co-developed iteratively with Claude.ai**:
 
 - `04_diagnose.py` — flags suspicious entries (too-long titles, missing authors, OCR garble)
 - `05_review.py` — produces a `review_needed.bib` subset to edit by hand
-- `06_diff_review.py` — diffs the human-edited bib back into machine-readable patches
+- `06_diff_review.py` — diffs the human-edited bib into machine-readable patches
 - `07_split_entries.py` — splits "two-entries-glued-together-by-OCR" records using reviewer breakpoints
 
 **Hand-edits never touch `records.jsonl`.** They live in `corrections.jsonl`, a sidecar of JSON ops that the exporter re-applies on every rebuild.
 
-→ Fully reproducible. Re-run the whole thing in ~30 seconds.
+→ Fully reproducible. Re-run the whole thing in ~30 seconds. (Human time much longer)
 
 ---
 
@@ -241,7 +245,7 @@ Cleanest cuts of the data:
 
 </div>
 
-> Everything that follows comes from automated analysis of this corpus.
+> Everything that follows comes from prompted-but-automated analysis of this corpus.
 > Errors are mine; OCR's; or, occasionally, Claude's.
 
 ---
@@ -256,7 +260,7 @@ Cleanest cuts of the data:
 | **2006–2010** | *Annual Psychology and Neuroscience In-House **Conference*** |
 | **2011–present** | *Annual **Graham Goddard** In-House Conference* |
 
-The 1983 program proudly announces itself as the *Eighth Annual*. It is, in fact, the **Ninth**. This has been bothering somebody for 43 years.
+The 1983 program proudly announces itself as the *Eighth Annual*. It was, in fact, the **Ninth**. 
 
 ---
 
@@ -320,7 +324,6 @@ The 1983 program proudly announces itself as the *Eighth Annual*. It is, in fact
 <span class="authors">— L. Smith & R. Klein</span>
 </div>
 
-<p class="small">(Two whole words. That's the entire title. Imagine being on that abstract committee.)</p>
 
 ---
 
@@ -340,45 +343,50 @@ The 1983 program proudly announces itself as the *Eighth Annual*. It is, in fact
 
 ---
 
-# Titles that should be on a T-shirt
+# Fun Titles (many more gems in the archive!)
 
 <div class="quote-card">
 <span class="year">2005</span><strong>"Doing the Locomotion With the Rat Perifornical Hypothalamus: Who's Excited About Glutamate?"</strong>
+<span class="authors">— F. Li, S. Deurveilher, C. Morgan & K. Semba</span>
 </div>
 
 <div class="quote-card">
 <span class="year">2007</span><strong>"Sex, Drugs, and Abrupt-Onset Distractors: Made You Look!"</strong>
+<span class="authors">— N. Saruk, G. Eskes, J. Christie, H. Duncan & R. Klein</span>
 </div>
 
 <div class="quote-card">
 <span class="year">2007</span><strong>"Stress Responding and Adolescent Development in a Rat Model System: Alley Cats and Hood Rats"</strong>
-<span class="authors">(2008 added: <em>"Alley Cats and Hood Rats, Part II"</em>)</span>
+<span class="authors">— L. Wright, K. Hébert, K. Muir & T. Perrot-Sinal (2008 added: <em>"Alley Cats and Hood Rats, Part II"</em>)</span>
 </div>
 
 <div class="quote-card">
 <span class="year">2008</span><strong>"Energy Drinks: What Have You Binge Drinking??"</strong>
+<span class="authors">— S. Price</span>
 </div>
 
 ---
 
-# Titles that should be on a T-shirt (2)
+# Fun Titles (2)
 
 <div class="quote-card">
 <span class="year">2008</span><strong>"Exhibitionist Flasher Uses Wing Mirrors with Fluorescent Fusilli for Sexual Entrapment"</strong>
+<span class="authors">— S. Shaw</span>
 </div>
 
 <div class="quote-card">
 <span class="year">2012</span><strong>"Sex on the Brain: Do Gender and Breeding Condition Affect FoxP2 Expression in Chickadees?"</strong>
+<span class="authors">— L. Phillmore, H. MacGillivray, S. Martin & R. Wilson</span>
 </div>
 
 <div class="quote-card">
 <span class="year">2012</span><strong>"What Are We Really Measuring in Tests of Anxiety in Mice?"</strong>
-<span class="authors">(an entire literature distilled to nine words)</span>
+<span class="authors">— R. E. Brown, R. K. Gunn & T. P. O'Leary (an entire literature distilled to nine words)</span>
 </div>
 
 <div class="quote-card">
 <span class="year">1977</span><strong>"Mus Musicus."</strong>
-<span class="authors">— J.C. Fentress. The whole thing is an extended joke about whether motor patterns have notes, rests, and melodies. Magnificent.</span>
+<span class="authors">— J. C. Fentress. The whole thing is an extended joke about whether motor patterns have notes, rests, and melodies. Magnificent.</span>
 </div>
 
 ---
@@ -417,6 +425,108 @@ The 1983 program proudly announces itself as the *Eighth Annual*. It is, in fact
 
 ---
 
+# Departmental milestones, captured
+
+The corpus quietly preserves the Department's own reflections on itself:
+
+<div class="quote-card">
+<span class="year">1984</span><strong>"Psychology's In-House Convention: 10 years old and going strong"</strong>
+<span class="authors">— R. Klein (the first retrospective, at the 10-year mark)</span>
+</div>
+
+<div class="quote-card">
+<span class="year">1997</span><strong>"The Hebb-Williams Maze: Fifty Years of Research (1946–1996)"</strong>
+<span class="authors">— R. Brown & L. Stanford</span>
+</div>
+
+<div class="quote-card">
+<span class="year">1998</span><strong>Symposium: "To Hebb and Beyond"</strong>
+<span class="authors">— a whole session devoted to the Department's intellectual lineage</span>
+</div>
+
+<div class="quote-card">
+<span class="year">2006</span><strong>"The History of Psychology at Dalhousie"</strong>
+<span class="authors">— L. Boutilier, D. Clark, J. Longard et al.</span>
+</div>
+
+---
+
+# Departmental milestones, captured (2)
+
+<div class="quote-card">
+<span class="year">2006</span><strong>"We've Come a Long Way in 35 Years"</strong>
+<span class="authors">— R. Hoffman</span>
+</div>
+
+<div class="quote-card">
+<span class="year">2007</span><strong>"Preserving Our History with Digital Video: The Snapshot Project"</strong>
+<span class="authors">— R. Hoffman & H. Schellinck</span>
+</div>
+
+<div class="quote-card">
+<span class="year">2013</span><strong>"A Neo-Hebbian Blueprint for the Integration of Neuro-Psychological Science"</strong>
+<span class="authors">— R. M. Klein</span>
+</div>
+
+<div class="quote-card">
+<span class="year">2023</span><strong>"Revising the Hebb Synapse for the 21st Century"</strong>
+<span class="authors">— R. E. Brown</span>
+</div>
+
+<div class="quote-card">
+<span class="year">2025</span><strong>"50 Years in Psychology (and Neuroscience) at Dalhousie"</strong>
+<span class="authors">— R. Klein (the immediate predecessor of *this* talk)</span>
+</div>
+
+---
+
+<!-- _class: hebb -->
+<style scoped>
+section.hebb ul { font-size: 0.85em; margin-top: 0.2em; }
+section.hebb p { font-size: 0.85em; margin: 0.3em 0; }
+</style>
+
+# The Internet, captured in real time
+
+<style scoped>
+section .quote-card { font-size: 0.74em; }
+section .quote-card blockquote { margin: 4px 0; padding: 2px 12px; font-size: 0.95em; }
+</style>
+
+<div class="quote-card">
+<span class="year">1994</span><strong>"Lab, Library, LAN, and (L')Internet"</strong> — R. Hoffman
+<blockquote>"This past year has seen the arrival of some exciting new technologies for information access… students can check Novanet for availability of journals, and even order a fax copy of an article <em>over the Internet</em>."</blockquote>
+</div>
+
+<div class="quote-card">
+<span class="year">1995</span><strong>"Caught in the Web: Psychology on the Internet in 1995"</strong> — R. Hoffman
+<blockquote>"Today it is possible to tour the Louvre Museum, book a hotel room in San Francisco, or order fresh Nova Scotia lobsters delivered anywhere in North America, all from your computer workstation. <strong>Tomorrow even more will be possible.</strong> …I will demonstrate a Web site (Home Page) for the Dalhousie Psychology Department."</blockquote>
+</div>
+
+<div class="quote-card">
+<span class="year">1997</span><strong>"Footprints on the Internet: What Do They Tell Us?"</strong> — R. Hoffman
+<blockquote>"The Psychology Department home page officially went on the World-Wide Web on <strong>November 29th, 1996.</strong>"</blockquote>
+</div>
+
+---
+
+# Donald O. Hebb — the long shadow
+
+![h:440 bg right:40% contain](figures/Hebb.jpg)
+
+**Donald O. Hebb (1904–1985)** — *The Organization of Behavior* (1949), the "Hebb synapse", McGill: a defining figure for psychology in Canada.
+
+His name is woven through the In-House corpus:
+
+- **80** occurrences of *Hebb* / *Hebbian*
+- **27** distinct presentations cite him by name
+- Spanning **1985 → 2026** — 41 years of conversation
+
+**Authors who invoke Hebb most:**
+R. Brown (13) · L. Stanford (6) · H. Schellinck (4) · R. Darrah (3) · B. Fertan (3) · R. Klein (2) · D. Kelly (2)
+
+---
+
 # What's next
 
 - **GitHub repo** (`inhouse-conference-archive`): pipeline, data, corrections, this talk
@@ -429,14 +539,32 @@ If you presented something between 1975 and 2026 and you find your name garbled,
 
 ---
 
-<!-- _class: title -->
+<!-- _class: title closing -->
 <!-- _backgroundColor: "#FFD400" -->
 <!-- _color: "#000" -->
 <!-- _paginate: false -->
+
+<style scoped>
+section.closing { justify-content: flex-start; padding-top: 40px; }
+section.closing h1 { font-size: 2.6em; margin-bottom: 0; }
+section.closing h2 { font-size: 1.25em; margin: 0.15em 0; font-weight: 500; }
+section.closing p { margin-top: 0.5em; }
+section.closing .qr { margin-top: 18px; display: flex; flex-direction: column; align-items: center; }
+section.closing .qr img { width: 200px; height: 200px; background: #fff; padding: 6px; border: 2px solid #000; }
+section.closing .qr .cap { font-size: 0.75em; margin-top: 6px; }
+</style>
 
 # Thank you
 
 ## Richard Brown · Suzanne King · Susan Lowerison
 ## …and 50 years of presenters
 
-aaron.newman@dal.ca · github.com/aaronjnewman (forthcoming)
+aaron.newman@dal.ca · github.com/aaronjnewman/inhouse-conference-archive
+
+<div class="qr">
+
+![w:200](figures/qr_github.png)
+
+<span class="cap">github.com/aaronjnewman/inhouse-conference-archive</span>
+
+</div>

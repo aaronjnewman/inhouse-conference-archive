@@ -42,10 +42,10 @@ mpl.rcParams.update({
     "font.size": 12,
 })
 
-DAL_GOLD = "#FFC72C"
+DAL_GOLD = "#FFD400"
 DAL_BLACK = "#000000"
-ACCENT = "#293F88"   # deep blue
-ACCENT2 = "#A33E3E"  # muted brick
+ACCENT = "#234BA0"   # deep blue
+ACCENT2 = "#A72836"  # muted brick
 GRID = "#DDDDDD"
 
 # ---------------------------------------------------------------------------
@@ -219,10 +219,11 @@ def main():
     names = [d["display"] for d in top_authors][::-1]
     counts_ = [d["count"] for d in top_authors][::-1]
     bars = ax.barh(names, counts_, color=ACCENT, edgecolor="white")
-    # Highlight the top 5
+    # Highlight the top 5 (last 5 in the reversed list)
     for b in bars[-5:]:
         b.set_color(DAL_GOLD)
         b.set_edgecolor(DAL_BLACK)
+        b.set_linewidth(0.8)
     for b, c in zip(bars, counts_):
         ax.text(c + 0.5, b.get_y() + b.get_height() / 2, str(c),
                 va="center", fontsize=10, color="#333")
@@ -246,17 +247,17 @@ def main():
     unique_people = list({name for _, name, _ in yearly_top})
     colour_map = {name: plt.cm.tab20(i / max(1, len(unique_people))) for i, name in enumerate(unique_people)}
 
-    fig, ax = plt.subplots(figsize=(12, 5.5))
+    fig, ax = plt.subplots(figsize=(12, 6.0))
     for (y, name, n) in yearly_top:
         ax.scatter(y, n, s=80 + 18 * n, color=colour_map[name],
                    edgecolor="#222", lw=0.6, zorder=3)
-        ax.text(y, n + 0.18, name.split(",")[0], rotation=60, ha="left",
+        ax.text(y, n + 0.25, name.split(",")[0], rotation=90, ha="center",
                 va="bottom", fontsize=8, color="#333")
     ax.set_xlabel("Year")
     ax.set_ylabel("Presentations that year")
     ax.set_title("Top contributor each year")
     ax.grid(axis="y", color=GRID, lw=0.7)
-    ax.set_ylim(0, max(n for _, _, n in yearly_top) + 2)
+    ax.set_ylim(0, max(n for _, _, n in yearly_top) + 4)
     fig.tight_layout()
     fig.savefig(FIGS / "03_top_per_year.png", dpi=160)
     plt.close(fig)
@@ -287,12 +288,13 @@ def main():
     streaks.sort(key=lambda t: t[1], reverse=True)
     top_streaks = streaks[:12]
 
-    fig, ax = plt.subplots(figsize=(11, 6.5))
+    fig, ax = plt.subplots(figsize=(11, 4.6))
     for i, (name, s, yrs) in enumerate(top_streaks[::-1]):
         ax.barh(name, max(yrs) - min(yrs) + 1, left=min(yrs),
                 color="#DDDDDD", edgecolor="none", height=0.55)
-        ax.scatter(yrs, [name] * len(yrs), color=ACCENT, s=28, zorder=3)
-        ax.text(max(yrs) + 0.4, name, f"streak: {s}", va="center", fontsize=10, color=ACCENT2)
+        ax.scatter(yrs, [name] * len(yrs), color=ACCENT, s=22, zorder=3)
+        ax.text(max(yrs) + 0.4, name, f"streak: {s}", va="center", fontsize=9, color=ACCENT2)
+    ax.tick_params(axis="y", labelsize=9)
     ax.set_xlim(1974, 2028)
     ax.set_xlabel("Year")
     ax.set_title("Longest consecutive-attendance streaks")

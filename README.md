@@ -16,10 +16,10 @@ who developed the kindling model of epilepsy at Dalhousie). The 2020 and
 
 | Path | Description |
 |---|---|
-| `In-House Program YYYY.{pdf,doc,docx,rtf,txt}` | One program per year, 1975–2026 (no 2020/2021). Rescued from filing cabinets and email archives by **Richard Brown**, **Suzanne King**, and **Susan Lowerison**. |
+| `source_programs/In-House Program YYYY.{pdf,doc,docx,rtf,txt}` | One program per year, 1975–2026 (no 2020/2021). Rescued from filing cabinets and email archives by **Richard Brown**, **Suzanne King**, and **Susan Lowerison**. |
 | `corrections.jsonl` | Human-curated patch/add/delete operations applied on top of the parser output. |
 | `descriptions of specific issues to fix.md` | Reviewer-supplied breakpoint markers used by the entry-splitter to disambiguate records the OCR fused together. |
-| `GrahamGoddard_photo.jpg`, `Klein graphic.png`, `program_1975*.{jpg,png}` | Images embedded in the slide deck. |
+| `slides/figures/{GrahamGoddard_photo.jpg, Hebb.jpg, klein_graphic.png, program_1975*.{jpg,png}}` | Hand-curated source images embedded in the slide deck. |
 
 ### Pipeline (regenerates everything else)
 

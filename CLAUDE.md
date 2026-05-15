@@ -27,8 +27,8 @@ will corrupt `.git/`. Always do new work in `~/dev/inhouse-conference-archive`.
 
 ## Source files
 
-- `In-House Program YYYY.{pdf,doc,docx,rtf,txt}` — one per year, 50 years
-  (1975–2026, missing 2020 + 2021).
+- `source_programs/In-House Program YYYY.{pdf,doc,docx,rtf,txt}` — one per
+  year, 50 years (1975–2026, missing 2020 + 2021).
 - Format varies across the 50-year span; the pipeline dispatches a
   year-appropriate parser for each (see "Format groups" below).
 - 1975–1979 were rescanned at higher quality in 2026-05.
@@ -37,6 +37,11 @@ will corrupt `.git/`. Always do new work in `~/dev/inhouse-conference-archive`.
   later supplied with full-program sources.
 - 2026 was added on 2026-05-15 (50th conference, first session-letter format).
 
+Top-level images that used to sit beside the source programs
+(`GrahamGoddard_photo.jpg`, `Hebb.jpg`, `Klein graphic.png`, `program_1975*`)
+were removed during the 2026-05-15 reorg — identical copies already live in
+`slides/figures/` and that's now the canonical home for them.
+
 ## Pipeline
 
 All scripts live in `pipeline/`. Run end-to-end with `bash pipeline/run_pipeline.sh`
@@ -44,7 +49,7 @@ or individually:
 
 | Stage | Script | Reads | Writes |
 |---|---|---|---|
-| 1 | `01_extract.py` | `In-House Program *.{pdf,doc,…}` | `extracted/YYYY.txt` |
+| 1 | `01_extract.py` | `source_programs/In-House Program *.{pdf,doc,…}` | `extracted/YYYY.txt` |
 | 2 | `02_parse.py` | `extracted/*.txt` | `records.jsonl` |
 | 3 | `03_export_bib.py` | `records.jsonl`, `corrections.jsonl` | `inhouse_conference.bib`, `qa_report.md` |
 | 4 | `04_diagnose.py` | `records.jsonl` | `diagnostics.md` |
