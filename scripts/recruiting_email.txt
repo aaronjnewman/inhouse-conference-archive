@@ -18,7 +18,7 @@ Hi {Name},
 
 Thanks again for volunteering to help review the archive. Here's how it works.
 
-I will shared a Google Sheet with you. Please reply to this email and let me know the email address you prefer to use with Google Drive/email/docs etc.
+I will share a Google Sheet with you. Please reply to this email and let me know the email address you prefer to use with Google Drive/email/docs etc.
 
 The sheet has one tab per year from 1975 through 2026, skipping 2020 and 2021 (COVID years). Each row is one presentation. The white columns on the left show the title, authors, and abstract as automated optical character recognition (OCR) software read them out of the program PDFs. Where the OCR got something wrong, type the corrected version in the associated yellow column (title, authors, and/or abstract).
 
