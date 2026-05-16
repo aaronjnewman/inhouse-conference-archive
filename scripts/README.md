@@ -143,10 +143,10 @@ Then `source ~/.zshrc` (or open a fresh terminal).
 
 The sync scripts need `records.jsonl` to detect collisions and to know
 what the current bib says. It's gitignored by default. To enable the
-scheduled workflows, track it:
+scheduled workflows, first open `.gitignore` and delete (or comment out)
+the `records.jsonl` line, then:
 
 ```sh
-# Edit .gitignore — remove or comment out the `records.jsonl` line.
 git add records.jsonl .gitignore
 git commit -m "Track records.jsonl for CI sync"
 git push
@@ -157,9 +157,16 @@ re-run the parser locally.
 
 ### 10. First push (2 min)
 
+First, install the Python dependencies:
+
 ```sh
 pip install "gspread>=6.0" "google-auth>=2.20"
-python3 scripts/push_to_sheet.py --year=2025   # smoke-test one year
+```
+
+Then smoke-test on a single year before doing the full sync:
+
+```sh
+python3 scripts/push_to_sheet.py --year=2025
 ```
 
 If that works, open the sheet — you should see a `2025` tab with
