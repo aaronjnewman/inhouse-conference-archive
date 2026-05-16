@@ -342,6 +342,19 @@ def _truncate_after_page_break(text: str) -> str:
     return text
 
 
+def clean_field(text: str) -> str:
+    """Whitespace-normalize a single-line field (title, authors_raw).
+
+    Collapses every whitespace run — including internal line breaks — to
+    a single space and strips the ends. Source PDFs and OCR routinely
+    introduce hard wraps inside titles and author lists; those are
+    artifacts, not intentional formatting.
+    """
+    if not text:
+        return text
+    return re.sub(r"\s+", " ", text).strip()
+
+
 def clean_abstract(text: str) -> str:
     """Strip ballot forms, page footers, RTF artifacts, OCR garbage,
     and similar noise."""
@@ -436,8 +449,8 @@ def record_to_bib(record: dict, citekey: str) -> str:
     booktitle, bt_source = get_booktitle(int(year))
 
     lines = [f"@inproceedings{{{citekey},\n"]
-    lines.append(_field("title", record.get("title", "")))
-    lines.append(_field("author", authors_bibtex(record.get("authors_raw", ""))))
+    lines.append(_field("title", clean_field(record.get("title", ""))))
+    lines.append(_field("author", authors_bibtex(clean_field(record.get("authors_raw", "")))))
     lines.append(_field("booktitle", booktitle))
     lines.append(_field("year", str(year)))
 

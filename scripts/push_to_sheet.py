@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import os
 import sys
+import time
 from collections import defaultdict
 from pathlib import Path
 
@@ -92,22 +93,86 @@ def col_letter(idx0: int) -> str:
             return s
 
 
-def format_worksheet(ws, n_rows: int) -> None:
-    """Apply header style, frozen panes, column colors, validation, hidden cols."""
-    n_cols = len(COLUMNS)
-    last_col = col_letter(n_cols - 1)
+_READONLY_COLS = (
+    "year", "entry_id", "presentation_type", "parser_format",
+    "qa_flags", "source_pdf", "title", "authors_raw", "abstract",
+)
+_META_COLS = ("delete?", "reviewer", "notes", "status")
+_COL_WIDTHS = {
+    "year": 60, "entry_id": 75, "presentation_type": 80,
+    "parser_format": 110, "qa_flags": 120, "source_pdf": 180,
+    "title": 280, "authors_raw": 200, "abstract": 380,
+    "title_fix": 280, "authors_fix": 200, "abstract_fix": 380,
+    "delete?": 70, "reviewer": 120, "notes": 200, "status": 110,
+}
 
-    # Header row formatting
-    ws.format(f"A1:{last_col}1", {
-        "backgroundColor": COLOR_HEADER,
-        "textFormat": {"foregroundColor": COLOR_HEADER_TEXT, "bold": True},
-        "horizontalAlignment": "LEFT",
-        "wrapStrategy": "CLIP",
+
+def _body_cell_request(sheet_id: int, n_rows: int, col_name: str,
+                       background: dict) -> dict:
+    """One repeatCell request that paints body cells of a column."""
+    ci = col_index(col_name)
+    return {
+        "repeatCell": {
+            "range": {
+                "sheetId": sheet_id,
+                "startRowIndex": 1,
+                "endRowIndex": n_rows + 1,
+                "startColumnIndex": ci,
+                "endColumnIndex": ci + 1,
+            },
+            "cell": {
+                "userEnteredFormat": {
+                    "backgroundColor": background,
+                    "wrapStrategy": "WRAP",
+                    "verticalAlignment": "TOP",
+                    "textFormat": {"fontSize": 9},
+                }
+            },
+            "fields": ("userEnteredFormat.backgroundColor,"
+                       "userEnteredFormat.wrapStrategy,"
+                       "userEnteredFormat.verticalAlignment,"
+                       "userEnteredFormat.textFormat"),
+        }
+    }
+
+
+def format_worksheet(ws, n_rows: int) -> None:
+    """Apply all formatting in ONE batch_update API call (header, frozen
+    panes, hidden columns, data validation, row heights, column widths,
+    body coloring). Keeps the per-tab write count low enough to clear
+    Google's 60-writes-per-minute quota when syncing 50 years."""
+    sheet_id = ws.id
+    n_cols = len(COLUMNS)
+    requests: list[dict] = []
+
+    # Header row coloring + bold text.
+    requests.append({
+        "repeatCell": {
+            "range": {
+                "sheetId": sheet_id,
+                "startRowIndex": 0, "endRowIndex": 1,
+                "startColumnIndex": 0, "endColumnIndex": n_cols,
+            },
+            "cell": {
+                "userEnteredFormat": {
+                    "backgroundColor": COLOR_HEADER,
+                    "horizontalAlignment": "LEFT",
+                    "wrapStrategy": "CLIP",
+                    "textFormat": {
+                        "foregroundColor": COLOR_HEADER_TEXT,
+                        "bold": True,
+                    },
+                }
+            },
+            "fields": ("userEnteredFormat.backgroundColor,"
+                       "userEnteredFormat.horizontalAlignment,"
+                       "userEnteredFormat.wrapStrategy,"
+                       "userEnteredFormat.textFormat"),
+        }
     })
 
-    # Freeze identity+context+current columns, plus header row.
-    sheet_id = ws.id
-    requests: list[dict] = [{
+    # Freeze panes (header row + identity/current columns).
+    requests.append({
         "updateSheetProperties": {
             "properties": {
                 "sheetId": sheet_id,
@@ -118,130 +183,81 @@ def format_worksheet(ws, n_rows: int) -> None:
             },
             "fields": "gridProperties.frozenRowCount,gridProperties.frozenColumnCount",
         }
-    }]
+    })
 
-    # Hide the snapshot columns.
+    # Hide snapshot columns.
     for col_name in HIDDEN_COLS:
         ci = col_index(col_name)
         requests.append({
             "updateDimensionProperties": {
-                "range": {
-                    "sheetId": sheet_id,
-                    "dimension": "COLUMNS",
-                    "startIndex": ci,
-                    "endIndex": ci + 1,
-                },
+                "range": {"sheetId": sheet_id, "dimension": "COLUMNS",
+                          "startIndex": ci, "endIndex": ci + 1},
                 "properties": {"hiddenByUser": True},
                 "fields": "hiddenByUser",
             }
         })
 
-    # Data validation: status dropdown
+    # Dropdown on status.
     status_ci = col_index("status")
     requests.append({
         "setDataValidation": {
-            "range": {
-                "sheetId": sheet_id,
-                "startRowIndex": 1,
-                "endRowIndex": n_rows + 1,
-                "startColumnIndex": status_ci,
-                "endColumnIndex": status_ci + 1,
-            },
+            "range": {"sheetId": sheet_id, "startRowIndex": 1,
+                      "endRowIndex": n_rows + 1,
+                      "startColumnIndex": status_ci,
+                      "endColumnIndex": status_ci + 1},
             "rule": {
                 "condition": {
                     "type": "ONE_OF_LIST",
                     "values": [{"userEnteredValue": v} for v in STATUS_OPTIONS],
                 },
-                "showCustomUi": True,
-                "strict": False,
+                "showCustomUi": True, "strict": False,
             },
         }
     })
 
-    # Data validation: delete? checkbox
+    # Checkbox on delete?.
     delete_ci = col_index("delete?")
     requests.append({
         "setDataValidation": {
-            "range": {
-                "sheetId": sheet_id,
-                "startRowIndex": 1,
-                "endRowIndex": n_rows + 1,
-                "startColumnIndex": delete_ci,
-                "endColumnIndex": delete_ci + 1,
-            },
-            "rule": {
-                "condition": {"type": "BOOLEAN"},
-                "strict": True,
-            },
+            "range": {"sheetId": sheet_id, "startRowIndex": 1,
+                      "endRowIndex": n_rows + 1,
+                      "startColumnIndex": delete_ci,
+                      "endColumnIndex": delete_ci + 1},
+            "rule": {"condition": {"type": "BOOLEAN"}, "strict": True},
         }
     })
 
-    # Set row heights so abstracts wrap usefully.
+    # Body row heights.
     requests.append({
         "updateDimensionProperties": {
-            "range": {
-                "sheetId": sheet_id,
-                "dimension": "ROWS",
-                "startIndex": 1,
-                "endIndex": n_rows + 1,
-            },
+            "range": {"sheetId": sheet_id, "dimension": "ROWS",
+                      "startIndex": 1, "endIndex": n_rows + 1},
             "properties": {"pixelSize": 120},
             "fields": "pixelSize",
         }
     })
 
-    # Column widths — narrow for IDs, wider for text columns.
-    widths = {
-        "year": 60, "entry_id": 75, "presentation_type": 80,
-        "parser_format": 110, "qa_flags": 120, "source_pdf": 180,
-        "title": 280, "authors_raw": 200, "abstract": 380,
-        "title_fix": 280, "authors_fix": 200, "abstract_fix": 380,
-        "delete?": 70, "reviewer": 120, "notes": 200, "status": 110,
-    }
-    for name, px in widths.items():
+    # Column widths.
+    for name, px in _COL_WIDTHS.items():
         ci = col_index(name)
         requests.append({
             "updateDimensionProperties": {
-                "range": {
-                    "sheetId": sheet_id,
-                    "dimension": "COLUMNS",
-                    "startIndex": ci,
-                    "endIndex": ci + 1,
-                },
+                "range": {"sheetId": sheet_id, "dimension": "COLUMNS",
+                          "startIndex": ci, "endIndex": ci + 1},
                 "properties": {"pixelSize": px},
                 "fields": "pixelSize",
             }
         })
 
-    ws.spreadsheet.batch_update({"requests": requests})
+    # Body cell backgrounds (read-only / yellow fix / blue meta).
+    for c in _READONLY_COLS:
+        requests.append(_body_cell_request(sheet_id, n_rows, c, COLOR_READONLY))
+    for c in FIX_COLS:
+        requests.append(_body_cell_request(sheet_id, n_rows, c, COLOR_FIX))
+    for c in _META_COLS:
+        requests.append(_body_cell_request(sheet_id, n_rows, c, COLOR_META))
 
-    # Per-column background colors for the body rows.
-    body_range_for = lambda name: (
-        f"{col_letter(col_index(name))}2:"
-        f"{col_letter(col_index(name))}{n_rows + 1}"
-    )
-    for ro_col in ("year", "entry_id", "presentation_type", "parser_format",
-                   "qa_flags", "source_pdf", "title", "authors_raw", "abstract"):
-        ws.format(body_range_for(ro_col), {
-            "backgroundColor": COLOR_READONLY,
-            "wrapStrategy": "WRAP",
-            "verticalAlignment": "TOP",
-            "textFormat": {"fontSize": 9},
-        })
-    for fix_col in FIX_COLS:
-        ws.format(body_range_for(fix_col), {
-            "backgroundColor": COLOR_FIX,
-            "wrapStrategy": "WRAP",
-            "verticalAlignment": "TOP",
-            "textFormat": {"fontSize": 9},
-        })
-    for meta_col in ("delete?", "reviewer", "notes", "status"):
-        ws.format(body_range_for(meta_col), {
-            "backgroundColor": COLOR_META,
-            "wrapStrategy": "WRAP",
-            "verticalAlignment": "TOP",
-            "textFormat": {"fontSize": 9},
-        })
+    ws.spreadsheet.batch_update({"requests": requests})
 
 
 def upsert_year_tab(sh, year: int, recs: list[dict], skip_format: bool) -> int:
@@ -280,9 +296,12 @@ def upsert_year_tab(sh, year: int, recs: list[dict], skip_format: bool) -> int:
 def main() -> None:
     skip_format = "--no-format" in sys.argv
     only_years: set[int] | None = None
+    start_from: int | None = None
     for arg in sys.argv[1:]:
         if arg.startswith("--year="):
             only_years = {int(y) for y in arg.split("=", 1)[1].split(",")}
+        elif arg.startswith("--start-from="):
+            start_from = int(arg.split("=", 1)[1])
 
     print("Loading records + corrections…")
     records = current_bib_state()
@@ -291,14 +310,22 @@ def main() -> None:
         by_year[r["year"]].append(r)
     if only_years:
         by_year = {y: rs for y, rs in by_year.items() if y in only_years}
+    if start_from is not None:
+        by_year = {y: rs for y, rs in by_year.items() if y >= start_from}
     print(f"  {len(records)} records across {len(by_year)} years")
 
     sh = get_spreadsheet()
     print(f"Pushing to spreadsheet: {sh.title}")
 
-    for year in sorted(by_year):
+    years = sorted(by_year)
+    for i, year in enumerate(years):
         n = upsert_year_tab(sh, year, by_year[year], skip_format)
-        print(f"  {year}: {n} rows")
+        print(f"  {year}: {n} rows", flush=True)
+        # Small breather between tabs to stay well under the 60-writes-per-
+        # minute write quota even with retries. ~4 writes per tab + 1.5s
+        # idle ≈ 24 tabs per minute, plenty of headroom.
+        if i < len(years) - 1:
+            time.sleep(1.5)
 
     print("Done.")
 
