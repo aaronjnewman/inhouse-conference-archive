@@ -19,6 +19,31 @@ import time
 from collections import defaultdict
 from pathlib import Path
 
+# Google Sheets API enforces ~60 write requests per minute per user with
+# bursts allowed. Our push does 3-4 writes per year tab — at full speed
+# that's well over 1/sec, so we (a) sleep between tabs and (b) retry on 429.
+INTER_TAB_SLEEP_S = 3.0
+RETRY_SLEEP_S = 45.0
+MAX_RETRIES = 5
+
+
+def with_retry(label: str, fn, *args, **kwargs):
+    """Call `fn(*args, **kwargs)`; on Google's 429 quota error, sleep and retry."""
+    last_err = None
+    for attempt in range(1, MAX_RETRIES + 1):
+        try:
+            return fn(*args, **kwargs)
+        except Exception as e:
+            msg = str(e)
+            if "429" not in msg and "Quota exceeded" not in msg:
+                raise
+            last_err = e
+            wait = RETRY_SLEEP_S * attempt
+            print(f"    [quota] {label}: 429 on attempt {attempt}, "
+                  f"sleeping {wait:.0f}s before retry…", flush=True)
+            time.sleep(wait)
+    raise last_err
+
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from _sheet_common import (  # noqa: E402
     COLUMNS, DEFAULT_STATUS, FIX_COLS, FROZEN_COL_COUNT, HIDDEN_COLS,
@@ -263,34 +288,46 @@ def format_worksheet(ws, n_rows: int) -> None:
 def upsert_year_tab(sh, year: int, recs: list[dict], skip_format: bool) -> int:
     """Create or update a worksheet for one year. Returns number of rows written."""
     title = str(year)
+    is_new = False
     try:
         ws = sh.worksheet(title)
         preserved = read_preserved(ws)
     except Exception:  # gspread.WorksheetNotFound or similar
-        ws = sh.add_worksheet(title=title, rows=max(len(recs) + 10, 50),
-                              cols=len(COLUMNS))
+        ws = with_retry(
+            f"add_worksheet({title})",
+            sh.add_worksheet,
+            title=title,
+            rows=max(len(recs) + 10, 50),
+            cols=len(COLUMNS),
+        )
         preserved = {}
+        is_new = True
 
     rows = [list(COLUMNS)]
     for r in sorted(recs, key=lambda x: x.get("entry_id", "")):
         rows.append(build_row(r, preserved.get(r["entry_id"], {})))
-
-    # Resize before writing so the update fits.
     needed_rows = len(rows)
-    if ws.row_count < needed_rows:
-        ws.resize(rows=needed_rows + 10, cols=len(COLUMNS))
-    elif ws.row_count > needed_rows + 50:
-        ws.resize(rows=needed_rows, cols=len(COLUMNS))
 
-    # Clear lingering rows beyond the new data, then write.
-    ws.clear()
-    ws.update(values=rows, range_name="A1",
-              value_input_option="USER_ENTERED")
+    if not is_new:
+        # Resize before writing so the update fits; clear stale rows.
+        if ws.row_count < needed_rows:
+            with_retry(f"resize({title})", ws.resize,
+                       rows=needed_rows + 10, cols=len(COLUMNS))
+        elif ws.row_count > needed_rows + 50:
+            with_retry(f"resize({title})", ws.resize,
+                       rows=needed_rows, cols=len(COLUMNS))
+        with_retry(f"clear({title})", ws.clear)
+
+    with_retry(
+        f"update({title})",
+        ws.update,
+        values=rows, range_name="A1", value_input_option="USER_ENTERED",
+    )
 
     if not skip_format:
-        format_worksheet(ws, len(rows) - 1)
+        with_retry(f"format({title})", format_worksheet, ws, needed_rows - 1)
 
-    return len(rows) - 1
+    return needed_rows - 1
 
 
 def main() -> None:
@@ -325,7 +362,7 @@ def main() -> None:
         # minute write quota even with retries. ~4 writes per tab + 1.5s
         # idle ≈ 24 tabs per minute, plenty of headroom.
         if i < len(years) - 1:
-            time.sleep(1.5)
+            time.sleep(INTER_TAB_SLEEP_S)
 
     print("Done.")
 
