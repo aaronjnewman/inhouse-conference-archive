@@ -38,68 +38,141 @@ name in `reviewer`, save. That's it — no git, no GitHub account required.
 
 ## One-time setup
 
-### 1. Create the spreadsheet
+Total time: ~15 minutes. No billing required — Sheets + Drive APIs are free
+at our usage level.
 
-Make a new Google Sheet (any title — e.g. *In-House Conference Corrections*).
-Note its **ID**: the long string between `/d/` and `/edit` in its URL.
+### 1. Create the spreadsheet (30 sec)
 
-### 2. Create a service account
+- Go to <https://sheets.new>.
+- Sign in with the Google account that should own the spreadsheet.
+- Name it something like *In-House Conference Corrections*.
+- Copy the long **spreadsheet ID** from the URL — the part between `/d/`
+  and `/edit`:
+  `https://docs.google.com/spreadsheets/d/`**`1AbCd...XyZ`**`/edit`.
+  Save it; we'll use it twice.
 
-In Google Cloud Console (free tier is fine):
+### 2. Create a Google Cloud project (2 min)
 
-1. Create a new project, e.g. *inhouse-conference-sync*.
-2. Enable the **Google Sheets API** and **Google Drive API** for the project.
-3. Create a service account (IAM & Admin → Service Accounts → Create).
-4. On the account's *Keys* tab, **Add Key → Create new key → JSON**. A
-   JSON file downloads — keep it private.
+- Go to <https://console.cloud.google.com/projectcreate>.
+- **Project name:** `inhouse-conference-sync` (or anything — just a label).
+- **Organization / Location:** leave defaults; "No organization" is fine.
+- Click **Create**, wait ~10 seconds, confirm the new project is selected
+  in the top-bar dropdown.
+- If GCP nags you about billing, **skip it** — Sheets API has a free tier
+  far above what we'll use.
 
-### 3. Share the sheet with the service account
+### 3. Enable the Sheets and Drive APIs (1 min)
 
-Open the JSON key file and copy the `client_email` value (looks like
-`<name>@<project>.iam.gserviceaccount.com`). In Google Sheets, share the
-spreadsheet with that email, **Editor** access.
+The service account needs both:
 
-### 4. Provide credentials locally
+- <https://console.cloud.google.com/apis/library/sheets.googleapis.com> →
+  click **Enable**.
+- <https://console.cloud.google.com/apis/library/drive.googleapis.com> →
+  click **Enable**.
 
-Easiest:
+(gspread uses Drive API to look up spreadsheets by ID.)
+
+### 4. Create the service account (2 min)
+
+- Go to <https://console.cloud.google.com/iam-admin/serviceaccounts/create>.
+- **Service account name:** `sheet-sync` — the ID auto-fills.
+- **Description (optional):** *Sync corrections.jsonl with reviewer sheet*.
+- Click **Create and continue**.
+- "Grant this service account access to project" → **just click Continue.**
+  No project-level IAM role needed; the service account gets access by
+  being shared into the spreadsheet (step 6).
+- "Grant users access to this service account" → **click Done.**
+
+You'll land on the service-accounts list. Click into the one you just
+made and copy its **email address** — looks like
+`sheet-sync@inhouse-conference-sync.iam.gserviceaccount.com`. You'll need
+it in a moment.
+
+### 5. Generate a JSON key (1 min)
+
+Still on the service-account detail page:
+
+- Click the **Keys** tab.
+- **Add Key → Create new key**.
+- Key type: **JSON**.
+- Click **Create**. A file downloads, named something like
+  `inhouse-conference-sync-abc123.json`.
+- Treat it like a password — don't email it, don't commit it to git.
+
+### 6. Share the spreadsheet with the service account (30 sec)
+
+- Open the spreadsheet from step 1.
+- Click the green **Share** button (top-right).
+- Paste the service-account email from step 4 into the people field.
+- Permission: **Editor**.
+- **Uncheck** "Notify people" (the service account doesn't have a real
+  inbox).
+- Click **Share**.
+
+### 7. Wire up local credentials (1 min)
 
 ```sh
 mkdir -p ~/.config/gspread
-cp ~/Downloads/<service-account>.json ~/.config/gspread/service_account.json
+mv ~/Downloads/inhouse-conference-sync-*.json ~/.config/gspread/service_account.json
+chmod 600 ~/.config/gspread/service_account.json
 ```
 
-(Or set `GOOGLE_SA_KEY_FILE=/path/to/key.json`.)
+(Or set `GOOGLE_SA_KEY_FILE=/path/to/key.json` if you'd rather keep it
+elsewhere.)
 
-Also export the sheet ID:
+Add the sheet ID to your shell rc (`~/.zshrc` or `~/.bashrc`):
 
 ```sh
-export CORRECTIONS_SHEET_ID="1AbCdEf...your-id..."
+export CORRECTIONS_SHEET_ID="paste-the-id-from-step-1"
 ```
 
-### 5. Provide credentials in GitHub Actions
+Then `source ~/.zshrc` (or open a fresh terminal).
 
-In the repo's **Settings → Secrets and variables → Actions**, add:
+### 8. Wire up GitHub Actions credentials (2 min)
 
-| Secret | Value |
+- Open **Settings → Secrets and variables → Actions** in the repo on
+  GitHub.
+- Click **New repository secret**, twice:
+
+| Secret name | Value |
 |---|---|
-| `GOOGLE_SA_KEY` | The **entire contents** of the service-account JSON file (paste raw). |
-| `CORRECTIONS_SHEET_ID` | The spreadsheet ID. |
+| `GOOGLE_SA_KEY` | The **entire contents** of the JSON key file. Open it in a text editor and paste the whole `{ ... }` blob. |
+| `CORRECTIONS_SHEET_ID` | The ID from step 1. |
 
-### 6. Make `records.jsonl` available to CI
+### 9. Track `records.jsonl` so CI can read it (1 min)
 
-The sync scripts read `records.jsonl` to detect collisions and to know
-what the bib currently says. It's gitignored by default. To enable the
-scheduled workflows:
+The sync scripts need `records.jsonl` to detect collisions and to know
+what the current bib says. It's gitignored by default. To enable the
+scheduled workflows, track it:
 
 ```sh
-git rm --cached records.jsonl 2>/dev/null  # if it was ever tracked
 # Edit .gitignore — remove or comment out the `records.jsonl` line.
 git add records.jsonl .gitignore
 git commit -m "Track records.jsonl for CI sync"
+git push
 ```
 
-Treat it as a build artifact (like a lockfile): re-commit whenever the
-parser changes.
+Treat it as a build artifact (like a lockfile): re-commit whenever you
+re-run the parser locally.
+
+### 10. First push (2 min)
+
+```sh
+pip install "gspread>=6.0" "google-auth>=2.20"
+python3 scripts/push_to_sheet.py --year=2025   # smoke-test one year
+```
+
+If that works, open the sheet — you should see a `2025` tab with
+formatted rows. Then run the full push:
+
+```sh
+python3 scripts/push_to_sheet.py
+```
+
+This takes a few minutes (one tab per year, lots of formatting calls).
+After it finishes, share the spreadsheet with your reviewers (just like
+any other Google Doc — by their personal email, Editor access) and send
+them the workflow blurb at the top of this README.
 
 ## Local commands
 
