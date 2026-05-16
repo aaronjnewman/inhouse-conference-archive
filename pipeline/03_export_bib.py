@@ -417,6 +417,11 @@ def clean_abstract(text: str) -> str:
     m = _ABSTRACT_NOISE.search(text)
     if m:
         text = text[:m.start()].strip()
+    # Per spec, abstracts have no internal line breaks and no multi-space
+    # runs. OCR line wrapping is more often artifact than intentional
+    # formatting. Done last so the line-anchored noise patterns above can
+    # still match.
+    text = re.sub(r"\s+", " ", text)
     return text.strip()
 
 
