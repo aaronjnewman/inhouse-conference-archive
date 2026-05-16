@@ -1,0 +1,93 @@
+# Recruiting email — draft
+
+Personalize the opener for each recipient (and add specific year
+suggestions where you can — e.g. "Suzanne, you've already done a pass on
+1995–2000, want to keep going from there?"). Everything below the
+"What it is" section can stay as-is.
+
+---
+
+**Subject:** Help clean up 50 years of In-House Conference abstracts?
+
+Hi {Name},
+
+For the 50th-anniversary In-House this year I put together a complete
+searchable archive of every program from 1975 to 2026 — roughly **2,150
+abstracts** across 48 conferences (2020 and 2021 are absent — COVID).
+The scans and PDFs you and others rescued have been OCR'd into a
+structured database and pushed to GitHub:
+
+<https://github.com/aaronjnewman/inhouse-conference-archive>
+
+The OCR did its best, but the older scans in particular have lots of
+small errors — author names mangled (`Hc1,Jaughton` for `McNaughton`),
+dropped accents, occasional words swallowed up. I'd like a small group
+of folks who know this department to do a careful pass year-by-year and
+clean those up.
+
+## What it is
+
+A **Google Sheet, one tab per year**. No GitHub account, no software
+to install. Each row is one presentation. You see what the OCR captured
+on the left, and there are **yellow columns** on the right where you
+type the corrected version.
+
+## What you'd do
+
+1. I'll share the sheet with you. Pick one or more years.
+2. On each row: if the title / authors / abstract is wrong, type the
+   correct version in the yellow column next to it. If it's already
+   right, leave the yellow columns empty.
+3. Set the row's **`status`** dropdown:
+   - `fixed` — you typed at least one correction
+   - `checked-ok` — you read it and nothing needed changing
+   - `needs-help` — something's wrong and you're not sure how to fix it
+4. Put your name in the **`reviewer`** column so we can credit you.
+5. Each row has a **`source_pdf`** link straight to the program PDF on
+   GitHub — click it if you want to compare against the original scan.
+
+## A few conventions
+
+- **Author format:** `Lastname, Firstname and Lastname, Firstname` —
+  e.g. `LoLordo, Vincent M. and Jacobs, W. J. and Foree, Donald D.`
+  This is BibTeX's canonical form. It avoids ambiguity with compound
+  surnames ("Van der Berg") and initial-only given names ("M.G. Yoon").
+- **Don't touch the white columns** — those are the read-only "what the
+  OCR currently says" record.
+- **Don't worry about structural problems** — e.g. one abstract that's
+  actually two presentations fused together, or an entry that's missing
+  entirely. Just set `status: needs-help` and explain in `notes`; I'll
+  fix those by hand.
+
+## Time
+
+Each year has 15–65 entries. A careful pass on one year is roughly
+30–60 minutes depending on how bad the OCR was. There's no deadline —
+do as much or as little as you want.
+
+## How fixes get applied
+
+Once a week, a script pulls the corrections from the sheet, applies
+them to the canonical archive, and regenerates the BibTeX file. So
+every Monday the public archive on GitHub reflects everyone's work
+from the prior week.
+
+If you're game, just reply and I'll share the sheet. Happy to do a
+15-minute screenshare first if you'd like a walkthrough.
+
+Thanks for considering it — this is exactly the kind of thing only
+people who've been around the department can do well.
+
+Aaron
+
+---
+
+## After they reply
+
+Things you'll likely need to do once they say yes:
+
+- Share the spreadsheet with their personal Gmail (Editor access).
+- Optionally suggest 1–2 specific years they have personal knowledge of
+  ("you were a regular through the late 90s — would you take 1996–2000?").
+- Point them at the **status legend** at the top of `scripts/README.md`
+  if they ask for more detail than the email gives.
