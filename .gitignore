@@ -1,11 +1,13 @@
 # ─── Generated pipeline outputs ──────────────────────────────────────────────
 # All of these are regenerable from the source programs + pipeline scripts.
 
+
+
 # Stage 1: extracted UTF-8 text per year
 extracted/
 
 # Stage 2: structured records (regenerated from extracted/)
-records.jsonl
+# records.jsonl
 
 # Stage 3: final QA report (regenerated each export)
 qa_report.md
