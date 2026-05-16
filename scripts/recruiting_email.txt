@@ -16,59 +16,43 @@ Subject: In-House archive review — quick guide
 
 Hi {Name},
 
-Thanks again for volunteering to help review the archive. Here's how
-it works.
+Thanks again for volunteering to help review the archive. Here's how it works.
 
-I've shared a Google Sheet with you (let me know if you don't see it).
-One tab per year from 1975 through 2026, skipping 2020 and 2021. Each
-row is one presentation. The white columns on the left show the title,
-authors, and abstract as automated optical character recognition (OCR)
-software read them out of the program PDFs. Where the OCR got something
-wrong, type the corrected version in the yellow column next to it.
+I will shared a Google Sheet with you. Please reply to this email and let me know the email address you prefer to use with Google Drive/email/docs etc.
+
+The sheet has one tab per year from 1975 through 2026, skipping 2020 and 2021 (COVID years). Each row is one presentation. The white columns on the left show the title, authors, and abstract as automated optical character recognition (OCR) software read them out of the program PDFs. Where the OCR got something wrong, type the corrected version in the associated yellow column (title, authors, and/or abstract).
 
 
 WHAT TO DO ON EACH ROW
 
-1. If the title, authors, or abstract is wrong, type the corrected
-   version in the matching yellow column. Leave a yellow column blank
-   if it was already right.
+1. If the title, authors, or abstract is wrong, type the corrected version in the matching yellow column. Leave a yellow column blank if it was already right.
 
 2. Set the "status" dropdown to one of:
      - fixed       you typed at least one correction
      - checked-ok  you read it and nothing needed changing
-     - needs-help  something's wrong and you can't fix it from the sheet
-                   (e.g. an entry seems missing, or two abstracts got
-                   fused into one). Add a note in the "notes" column;
-                   I'll handle these.
+     - needs-help  something's wrong and you can't fix it from the sheet (e.g. an entry seems missing, or two abstracts got fused into one). Add a note in the "notes" column; I'll handle these.
 
 3. Put your name in the "reviewer" column.
 
-4. The "source_pdf" column has a link straight to the original program
-   PDF — click it to compare against the scan when in doubt.
+4. The "source_pdf" column has a link straight to the original program PDF — click it to compare against the scan when in doubt.
 
 
 CONVENTIONS
 
 - Author format: Lastname, Firstname and Lastname, Firstname. E.g.:
       LoLordo, Vincent M. and Jacobs, W. J. and Foree, Donald D.
-  This handles compound surnames ("Van der Berg") and initial-only
-  given names ("M.G. Yoon") without ambiguity.
+  This handles compound surnames ("Van der Berg") and initial-only given names ("M.G. Yoon") without ambiguity.
 
-- Leave the white columns alone. They're the read-only record of what
-  the OCR captured.
+- Leave the white columns alone. They're the read-only record of what the OCR captured.
 
 
 TIME AND PACE
 
-Each year has 15-65 entries; a careful pass runs about 30-60 minutes
-depending on how rough the OCR was. No deadline. Do as much or as
-little as you want, in whichever years appeal to you. If you'd like
-a suggestion of where to start, tell me what era you remember best
-and I'll point you at the right tabs.
+A careful pass through one year may take about 30-60 minutes depending on how rough the OCR was. There is no deadline. Do as much or as little as you want, in whichever years appeal to you.
 
-Updates from the sheet are pulled into the main archive once a week,
-so your work will start showing up in the regenerated bibliography
-soon after you make it.
+Updates from the sheet are pulled into the main archive once a week, so your work will start showing up in the regenerated bibliography on that timeline.
+
+Please let me know if you have any questions, or encounter troubles when working on this.
 
 Thanks again,
 Aaron
