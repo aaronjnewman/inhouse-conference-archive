@@ -63,8 +63,9 @@ COLOR_READONLY = {"red": 0.96, "green": 0.96, "blue": 0.96}  # near-white
 COLOR_HEADER = {"red": 0.18, "green": 0.29, "blue": 0.63}    # deep blue
 COLOR_HEADER_TEXT = {"red": 1.0, "green": 0.83, "blue": 0.0}  # Dalhousie gold
 
-# GitHub blob URL for source-program links. Update if repo moves.
-GITHUB_BLOB = "https://github.com/aaronjnewman/inhouse-conference-archive/blob/main"
+# GitHub Pages base URL for source-program links — PDFs render inline here.
+# Update if repo moves or is renamed.
+GITHUB_PAGES_BASE = "https://aaronjnewman.github.io/inhouse-conference-archive"
 
 
 def col_index(name: str) -> int:
@@ -166,7 +167,7 @@ def source_pdf_url(record: dict) -> str:
     name = _SOURCE_INDEX.get(record.get("source_file", ""), "")
     if not name:
         return ""
-    return f"{GITHUB_BLOB}/source_programs/{quote(name)}"
+    return f"{GITHUB_PAGES_BASE}/source_programs/{quote(name)}"
 
 
 # ── Hashing / deduplication ──────────────────────────────────────────────────
