@@ -60,7 +60,8 @@ def build_row(rec: dict, preserved: dict[str, str]) -> list:
     row[col_index("presentation_type")] = rec.get("presentation_type", "")
     row[col_index("parser_format")] = rec.get("parser_format", "")
     row[col_index("qa_flags")] = ", ".join(rec.get("qa_flags", []) or [])
-    row[col_index("source_pdf")] = source_pdf_url(rec)
+    _url = source_pdf_url(rec)
+    row[col_index("source_pdf")] = f'=HYPERLINK("{_url}","View PDF")' if _url else ""
     row[col_index("title")] = rec.get("title", "")
     row[col_index("authors_raw")] = rec.get("authors_raw", "")
     row[col_index("abstract")] = rec.get("abstract", "")
