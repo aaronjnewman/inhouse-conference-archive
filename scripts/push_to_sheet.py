@@ -322,7 +322,7 @@ def upsert_year_tab(sh, year: int, recs: list[dict], skip_format: bool) -> int:
     with_retry(
         f"update({title})",
         ws.update,
-        values=rows, range_name="A1", value_input_option="USER_ENTERED",
+        values=rows, range_name="A1", raw=False, value_input_option="USER_ENTERED",
     )
 
     if not skip_format:
