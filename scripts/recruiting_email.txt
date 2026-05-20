@@ -22,19 +22,21 @@ I will share a Google Sheet with you. Please reply to this email and let me know
 
 The sheet has one tab per year from 1975 through 2026, skipping 2020 and 2021 (COVID years). Each row is one presentation. The white columns on the left show the title, authors, and abstract as automated optical character recognition (OCR) software read them out of the program PDFs. Where the OCR got something wrong, type the corrected version in the associated yellow column (title, authors, and/or abstract).
 
+Each row also has a "View PDF" link in the source_pdf column that opens the original scanned program for that year in a new browser tab. You will want to have that open alongside the sheet as you work — OCR errors often only make sense when you can see the original page.
+
 
 WHAT TO DO ON EACH ROW
 
-1. If the title, authors, or abstract is wrong, type the corrected version in the matching yellow column. Leave a yellow column blank if it was already right.
+1. Click "View PDF" in the source_pdf column to open the original program for that year. Use it as your reference throughout.
 
-2. Set the "status" dropdown to one of:
+2. If the title, authors, or abstract is wrong, type the corrected version in the matching yellow column. Leave a yellow column blank if it was already right.
+
+3. Set the "status" dropdown to one of:
      - fixed       you typed at least one correction
      - checked-ok  you read it and nothing needed changing
      - needs-help  something's wrong and you can't fix it from the sheet (e.g. an entry seems missing, or two abstracts got fused into one). Add a note in the "notes" column; I'll handle these.
 
-3. Put your name in the "reviewer" column.
-
-4. The "source_pdf" column has a link straight to the original program PDF — click it to compare against the scan when in doubt.
+4. Put your name in the "reviewer" column.
 
 
 CONVENTIONS
