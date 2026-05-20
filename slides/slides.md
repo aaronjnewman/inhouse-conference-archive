@@ -391,40 +391,6 @@ The 1983 program proudly announces itself as the *Eighth Annual*. It was, in fac
 
 ---
 
-# Word of the year — the Department's shifting attention
-
-<div class="two-col">
-
-<div>
-
-**1977** — *seen*
-**1978** — *mixed-motive*
-**1979** — *tectal*
-**1985** — *kindling*
-**1991** — *kindling*
-**1997** — *attention*
-**2003** — *attention*
-
-</div>
-
-<div>
-
-**2009** — *HPA-axis*
-**2011** — *Alzheimer's*
-**2013** — *Alzheimer's*
-**2018** — *undergrad*
-**2019** — *replication*
-**2024** — *trauma*
-**2025** — *settler*
-
-</div>
-
-</div>
-
-<p class="small">Each year's most over-represented title word vs. the 50-year baseline. The Department's preoccupations, written by no one and edited by no one.</p>
-
----
-
 # Departmental milestones, captured
 
 The corpus quietly preserves the Department's own reflections on itself:
@@ -514,16 +480,16 @@ section .quote-card blockquote { margin: 4px 0; padding: 2px 12px; font-size: 0.
 
 ![h:440 bg right:40% contain](figures/Hebb.jpg)
 
-**Donald O. Hebb (1904–1985)** — *The Organization of Behavior* (1949), the "Hebb synapse", McGill: a defining figure for psychology in Canada.
+**Donald O. Hebb (1904–1985)** — *The Organization of Behavior* (1949), the "Hebb synapse".
 
-His name is woven through the In-House corpus:
+His name is woven through the corpus:
 
 - **80** occurrences of *Hebb* / *Hebbian*
 - **27** distinct presentations cite him by name
-- Spanning **1985 → 2026** — 41 years of conversation
+- Spanning **1985 → 2026**
 
 **Authors who invoke Hebb most:**
-R. Brown (13) · L. Stanford (6) · H. Schellinck (4) · R. Darrah (3) · B. Fertan (3) · R. Klein (2) · D. Kelly (2)
+R. Brown (13) · L. Stanford (6) · H. Schellinck (4) · R. Darrah (3) · E. Fertan (3) · R. Klein (2) · D. Kelly (2)
 
 ---
 
